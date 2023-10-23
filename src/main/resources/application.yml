@@ -1,1 +1,39 @@
+server:
+  port:
+    8088
 
+springdoc:
+    default-consumes-media-type: application/json;charset=UTF-8
+    default-produces-media-type: application/json;charset=UTF-8
+    swagger-ui:
+        path: /api-docs
+        tryItOutEnabled: true
+        operationsSorter: method
+        tagsSorter: alpha
+        filter: true
+
+logging:
+    file:
+        name: ./logs/app.log
+    level:
+        root: INFO
+        kr.lfin.exam: INFO
+        org.hibernate.sql: DEBUG
+        org.hibernate.type.descriptor.sql: DEBUG
+    logback:
+        rollingpolicy:
+            file-name-pattern: "./logs/app.log.%d{yyyyMMdd}.%i"
+            max-history: 30
+            max-file-size: 100MB
+#
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/exam?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  logging.level:
+    org.hibernate.orm.jdbc.bind: trace
