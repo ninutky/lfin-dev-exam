@@ -37,3 +37,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   logging.level:
     org.hibernate.orm.jdbc.bind: trace
+  security:
+    user:
+      name: user
+      password: 1234

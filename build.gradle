@@ -36,6 +36,7 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 
 	implementation 'commons-codec:commons-codec:1.15'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	// query dsl
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
