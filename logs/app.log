@@ -4393,3 +4393,698 @@ java.sql.SQLSyntaxErrorException: Table 'exam.user' doesn't exist
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
 	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
 
+2023-10-24T11:00:08.297+09:00  INFO 6047 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 6047 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:00:08.299+09:00  INFO 6047 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:00:09.408+09:00  INFO 6047 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:00:09.457+09:00  INFO 6047 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:00:09.541+09:00  WARN 6047 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:00:09.975+09:00  INFO 6047 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:00:09.983+09:00  INFO 6047 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:00:09.984+09:00  INFO 6047 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:00:10.067+09:00  INFO 6047 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:00:10.068+09:00  INFO 6047 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+2023-10-24T11:00:10.309+09:00  INFO 6047 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:00:10.529+09:00  INFO 6047 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67b560fe
+2023-10-24T11:00:10.531+09:00  INFO 6047 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:00:10.579+09:00  INFO 6047 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:00:10.645+09:00  INFO 6047 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:00:10.648+09:00  INFO 6047 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:00:10.993+09:00  INFO 6047 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:00:11.100+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5a1c7619)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b41b8bb)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2023-10-24T11:00:11.101+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2023-10-24T11:00:11.102+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@300aa927) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fa11fda)
+2023-10-24T11:00:11.102+09:00 DEBUG 6047 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e1e90a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d95166a)
+2023-10-24T11:00:11.941+09:00  INFO 6047 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:00:11.944+09:00  INFO 6047 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:00:12.340+09:00  WARN 6047 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:00:13.061+09:00  INFO 6047 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:00:13.137+09:00  WARN 6047 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-24T11:00:13.140+09:00  INFO 6047 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:00:13.143+09:00  INFO 6047 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:00:13.152+09:00  INFO 6047 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:00:13.154+09:00  INFO 6047 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-24T11:00:13.176+09:00  INFO 6047 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-24T11:00:13.203+09:00 ERROR 6047 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2023-10-24T11:01:26.501+09:00  INFO 6091 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 6091 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:01:26.502+09:00  INFO 6091 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:01:27.517+09:00  INFO 6091 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:01:27.568+09:00  INFO 6091 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:01:27.647+09:00  WARN 6091 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:01:28.063+09:00  INFO 6091 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:01:28.072+09:00  INFO 6091 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:01:28.072+09:00  INFO 6091 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:01:28.148+09:00  INFO 6091 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:01:28.149+09:00  INFO 6091 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1602 ms
+2023-10-24T11:01:28.362+09:00  INFO 6091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:01:28.597+09:00  INFO 6091 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d969452
+2023-10-24T11:01:28.599+09:00  INFO 6091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:01:28.646+09:00  INFO 6091 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:01:28.715+09:00  INFO 6091 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:01:28.718+09:00  INFO 6091 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:01:29.019+09:00  INFO 6091 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:01:29.128+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@adc3344) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee)
+2023-10-24T11:01:29.128+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0)
+2023-10-24T11:01:29.128+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e)
+2023-10-24T11:01:29.128+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@21d8da75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619)
+2023-10-24T11:01:29.128+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb)
+2023-10-24T11:01:29.129+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6)
+2023-10-24T11:01:29.129+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724)
+2023-10-24T11:01:29.129+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2023-10-24T11:01:29.129+09:00 DEBUG 6091 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2023-10-24T11:01:29.947+09:00  INFO 6091 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:01:29.950+09:00  INFO 6091 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:01:30.302+09:00  WARN 6091 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:01:30.888+09:00  INFO 6091 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:01:30.977+09:00  WARN 6091 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-24T11:01:30.980+09:00  INFO 6091 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:01:30.983+09:00  INFO 6091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:01:30.995+09:00  INFO 6091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:01:30.997+09:00  INFO 6091 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-24T11:01:31.015+09:00  INFO 6091 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-24T11:01:31.035+09:00 ERROR 6091 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2023-10-24T11:06:03.691+09:00  INFO 6293 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 6293 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:06:03.693+09:00  INFO 6293 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:06:05.391+09:00  INFO 6293 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:06:05.451+09:00  INFO 6293 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:06:05.516+09:00  WARN 6293 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:06:05.917+09:00  INFO 6293 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:06:05.925+09:00  INFO 6293 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:06:05.925+09:00  INFO 6293 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:06:05.997+09:00  INFO 6293 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:06:05.998+09:00  INFO 6293 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2267 ms
+2023-10-24T11:06:06.278+09:00  INFO 6293 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:06:06.530+09:00  INFO 6293 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45dde6ac
+2023-10-24T11:06:06.542+09:00  INFO 6293 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:06:06.586+09:00  INFO 6293 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:06:06.645+09:00  INFO 6293 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:06:06.648+09:00  INFO 6293 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:06:07.014+09:00  INFO 6293 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21d8da75)
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5a1c7619) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@20a946d9)
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2b41b8bb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4cadd4d4)
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1f4dd016)
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1b465fa9)
+2023-10-24T11:06:07.114+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@598e5cb8)
+2023-10-24T11:06:07.115+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@199806aa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@300aa927)
+2023-10-24T11:06:07.115+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fa11fda) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@24e1e90a)
+2023-10-24T11:06:07.115+09:00 DEBUG 6293 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7d95166a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@18b3db6e)
+2023-10-24T11:06:07.937+09:00  INFO 6293 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:06:07.942+09:00  INFO 6293 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:06:08.416+09:00  WARN 6293 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:06:09.117+09:00  INFO 6293 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:06:09.211+09:00  WARN 6293 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-24T11:06:09.215+09:00  INFO 6293 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:06:09.223+09:00  INFO 6293 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:06:09.232+09:00  INFO 6293 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:06:09.250+09:00  INFO 6293 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-24T11:06:09.290+09:00  INFO 6293 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-24T11:06:09.329+09:00 ERROR 6293 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8088 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8088 or configure this application to listen on another port.
+
+2023-10-24T11:07:57.791+09:00  INFO 6350 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 6350 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:07:57.794+09:00  INFO 6350 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:07:58.712+09:00  INFO 6350 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:07:58.758+09:00  INFO 6350 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:07:58.836+09:00  WARN 6350 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:07:59.277+09:00  INFO 6350 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:07:59.290+09:00  INFO 6350 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:07:59.291+09:00  INFO 6350 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:07:59.376+09:00  INFO 6350 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:07:59.376+09:00  INFO 6350 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1539 ms
+2023-10-24T11:07:59.646+09:00  INFO 6350 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:07:59.882+09:00  INFO 6350 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d969452
+2023-10-24T11:07:59.884+09:00  INFO 6350 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:07:59.930+09:00  INFO 6350 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:07:59.982+09:00  INFO 6350 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:07:59.984+09:00  INFO 6350 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:08:00.401+09:00  INFO 6350 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:08:00.498+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@adc3344) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@484302ee)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4e647f39) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@778197c0)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2cdc67) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4c28f97e)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@21d8da75) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5a1c7619)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@20a946d9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b41b8bb)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4cadd4d4) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7538cfe6)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1f4dd016) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@396f2724)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b465fa9) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@28b2e4d8)
+2023-10-24T11:08:00.499+09:00 DEBUG 6350 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@598e5cb8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@199806aa)
+2023-10-24T11:08:01.206+09:00  INFO 6350 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:08:01.210+09:00  INFO 6350 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:08:01.552+09:00  WARN 6350 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:08:02.134+09:00  INFO 6350 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:08:02.211+09:00  INFO 6350 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:08:02.226+09:00  INFO 6350 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 4.84 seconds (process running for 10.52)
+2023-10-24T11:08:50.639+09:00  INFO 6350 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:08:50.641+09:00  INFO 6350 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:08:50.643+09:00  INFO 6350 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-24T11:08:50.675+09:00  WARN 6350 --- [http-nio-8088-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<kr.lfin.exam.common.utils.ApiResult> kr.lfin.exam.controllers.UserController.insert(kr.lfin.exam.domains.User)]
+2023-10-24T11:08:56.734+09:00  WARN 6350 --- [http-nio-8088-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2023-10-24T11:08:56.735+09:00 ERROR 6350 --- [http-nio-8088-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'exam.user' doesn't exist
+2023-10-24T11:08:56.746+09:00 DEBUG 6350 --- [http-nio-8088-exec-4] o.h.sql.results.spi.LoadContexts         : LoadContexts still contained JdbcValuesSourceProcessingState registrations on cleanup
+2023-10-24T11:08:56.751+09:00 ERROR 6350 --- [http-nio-8088-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select u1_0.email,u1_0.name,u1_0.password,u1_0.phone from user u1_0 limit ?,?] [Table 'exam.user' doesn't exist] [n/a]; SQL [n/a]] with root cause
+
+java.sql.SQLSyntaxErrorException: Table 'exam.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:239) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:163) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:254) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:134) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:66) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:198) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:361) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:110) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:303) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:244) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:518) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:119) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:697) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:449) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:426) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244) ~[spring-aop-6.0.13.jar:6.0.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.findAll(Unknown Source) ~[na:na]
+	at kr.lfin.exam.services.UserService.findAll(UserService.java:17) ~[main/:na]
+	at kr.lfin.exam.controllers.UserController.findAll(UserController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-10-24T11:09:52.717+09:00  WARN 6350 --- [http-nio-8088-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1146, SQLState: 42S02
+2023-10-24T11:09:52.717+09:00 ERROR 6350 --- [http-nio-8088-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Table 'exam.user' doesn't exist
+2023-10-24T11:09:52.720+09:00 DEBUG 6350 --- [http-nio-8088-exec-6] o.h.sql.results.spi.LoadContexts         : LoadContexts still contained JdbcValuesSourceProcessingState registrations on cleanup
+2023-10-24T11:09:52.722+09:00 ERROR 6350 --- [http-nio-8088-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select u1_0.email,u1_0.name,u1_0.password,u1_0.phone from user u1_0 limit ?,?] [Table 'exam.user' doesn't exist] [n/a]; SQL [n/a]] with root cause
+
+java.sql.SQLSyntaxErrorException: Table 'exam.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:239) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:163) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:254) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:134) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:66) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:198) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:361) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:110) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:303) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:244) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:518) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:119) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.readPage(SimpleJpaRepository.java:697) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:449) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:426) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244) ~[spring-aop-6.0.13.jar:6.0.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy131.findAll(Unknown Source) ~[na:na]
+	at kr.lfin.exam.services.UserService.findAll(UserService.java:17) ~[main/:na]
+	at kr.lfin.exam.controllers.UserController.findAll(UserController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-10-24T11:12:35.781+09:00  WARN 6350 --- [http-nio-8088-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2023-10-24T11:14:35.693+09:00  WARN 6350 --- [http-nio-8088-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2023-10-24T11:14:49.816+09:00  WARN 6350 --- [http-nio-8088-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2023-10-24T11:16:35.905+09:00  WARN 6350 --- [http-nio-8088-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<kr.lfin.exam.common.utils.ApiResult> kr.lfin.exam.controllers.UserController.insert(kr.lfin.exam.domains.User)]
+2023-10-24T11:18:23.272+09:00  WARN 6350 --- [http-nio-8088-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------991358668766026868835518;charset=UTF-8' is not supported]
+2023-10-24T11:26:31.544+09:00  INFO 6350 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:26:31.572+09:00  INFO 6350 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:26:31.609+09:00  INFO 6350 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:26:46.204+09:00  INFO 6923 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 6923 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:26:46.206+09:00  INFO 6923 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:26:47.256+09:00  INFO 6923 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:26:47.304+09:00  INFO 6923 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:26:47.378+09:00  WARN 6923 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:26:47.817+09:00  INFO 6923 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:26:47.834+09:00  INFO 6923 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:26:47.834+09:00  INFO 6923 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:26:47.936+09:00  INFO 6923 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:26:47.936+09:00  INFO 6923 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1693 ms
+2023-10-24T11:26:48.183+09:00  INFO 6923 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:26:48.424+09:00  INFO 6923 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@451816fd
+2023-10-24T11:26:48.426+09:00  INFO 6923 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:26:48.472+09:00  INFO 6923 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:26:48.525+09:00  INFO 6923 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:26:48.530+09:00  INFO 6923 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:26:48.859+09:00  INFO 6923 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:26:48.970+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6eb00cbe) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@74e4be21)
+2023-10-24T11:26:48.987+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4d174189) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@628bd77e)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c30f26d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d74507c)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2a984952) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16944b58)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1dbc607d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@62b42406)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@a0e33db) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ef46749)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@40b54762) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@362cf66)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7809b43a) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65da4a5d)
+2023-10-24T11:26:48.988+09:00 DEBUG 6923 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@fbe8fd3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1ab268bd)
+2023-10-24T11:26:50.083+09:00  INFO 6923 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:26:50.087+09:00  INFO 6923 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:26:50.421+09:00  WARN 6923 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:26:51.188+09:00  INFO 6923 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:26:51.268+09:00  INFO 6923 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:26:51.284+09:00  INFO 6923 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 5.477 seconds (process running for 11.426)
+2023-10-24T11:26:53.890+09:00  INFO 6923 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:26:53.891+09:00  INFO 6923 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:26:53.892+09:00  INFO 6923 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-24T11:26:53.944+09:00  WARN 6923 --- [http-nio-8088-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------589486081869387820443158;charset=UTF-8' is not supported]
+2023-10-24T11:26:53.947+09:00  INFO 6923 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		44ms	0	0
+2023-10-24T11:26:53.947+09:00  INFO 6923 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------589486081869387820443158, Accept: */*, 0, []
+2023-10-24T11:26:53.947+09:00  INFO 6923 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:26:59.525+09:00  INFO 6923 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <-> 5907ab08-c531-462a-aa53-0a7ecf45cbeb 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	167ms	0	439
+2023-10-24T11:26:59.525+09:00  INFO 6923 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : >>> 5907ab08-c531-462a-aa53-0a7ecf45cbeb Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:26:59.525+09:00  INFO 6923 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <<< 5907ab08-c531-462a-aa53-0a7ecf45cbeb Content-Type: application/json, 439, [{"txid":"5907ab08-c531-462a-aa53-0a7ecf45cbeb","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"unpaged":false,"paged":true},"totalPages":0,"totalElements":0,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":0,"first":true,"empty":true},"timestamp":1698114419498}]
+2023-10-24T11:28:57.042+09:00  INFO 6923 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : <-> e346b81d-29c5-4ee9-ac7a-3c1e641420da 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	156ms	0	1392
+2023-10-24T11:28:57.047+09:00  INFO 6923 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : >>> e346b81d-29c5-4ee9-ac7a-3c1e641420da Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:28:57.047+09:00  INFO 6923 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : <<< e346b81d-29c5-4ee9-ac7a-3c1e641420da Content-Type: application/json, 1392, [{"txid":"e346b81d-29c5-4ee9-ac7a-3c1e641420da","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"email":"user1@example.com","password":"password1","name":"User One","phone":"123-456-7890"},{"email":"user2@example.com","password":"password2","name":"User Two","phone":"987-654-3210"},{"email":"user3@example.com","password":"password3","name":"User Three","phone":"555-555-5555"},{"email":"user4@example.com","password":"password4","name":"User Four","phone":"888-888-8888"},{"email":"user5@example.com","password":"password5","name":"User Five","phone":"777-777-7777"},{"email":"user6@example.com","password":"password6","name":"User Six","phone":"111-111-1111"},{"email":"user7@example.com","password":"password7","name":"User Seven","phone":"999-999-9999"},{"email":"user8@example.com","password":"password8","name":"User Eight","phone":"777-111-2222"},{"email":"user9@example.com","password":"password9","name":"User Nine","phone":"555-111-8888"},{"email":"user10@example.com","password":"password10","name":"User Ten","phone":"444-000-9999"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"unpaged":false,"paged":true},"totalPages":1,"totalElements":10,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698114537011}]
+2023-10-24T11:29:05.796+09:00  WARN 6923 --- [http-nio-8088-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------781697768623591672514545;charset=UTF-8' is not supported]
+2023-10-24T11:29:05.797+09:00  INFO 6923 --- [http-nio-8088-exec-7] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		12ms	0	0
+2023-10-24T11:29:05.797+09:00  INFO 6923 --- [http-nio-8088-exec-7] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------781697768623591672514545, Accept: */*, 0, []
+2023-10-24T11:29:05.798+09:00  INFO 6923 --- [http-nio-8088-exec-7] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:38:57.785+09:00  INFO 6923 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:38:57.805+09:00  INFO 6923 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:38:57.832+09:00  INFO 6923 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:39:09.515+09:00  INFO 7243 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 7243 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:39:09.516+09:00  INFO 7243 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:39:10.944+09:00  INFO 7243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:39:11.007+09:00  INFO 7243 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:39:11.120+09:00  WARN 7243 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:39:11.814+09:00  INFO 7243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:39:11.890+09:00  INFO 7243 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:39:11.891+09:00  INFO 7243 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:39:12.095+09:00  INFO 7243 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:39:12.095+09:00  INFO 7243 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2533 ms
+2023-10-24T11:39:12.328+09:00  INFO 7243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:39:12.555+09:00  INFO 7243 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@283a8ad6
+2023-10-24T11:39:12.556+09:00  INFO 7243 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:39:12.591+09:00  INFO 7243 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:39:12.633+09:00  INFO 7243 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:39:12.635+09:00  INFO 7243 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:39:12.970+09:00  INFO 7243 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@41026e5c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@12421766)
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e44cb34) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@731e0bff)
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@213ceb4e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@23c72128)
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2bd2430f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2890e479)
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6eb00cbe) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74e4be21)
+2023-10-24T11:39:13.081+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4d174189) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@628bd77e)
+2023-10-24T11:39:13.082+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c30f26d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5d74507c)
+2023-10-24T11:39:13.082+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a984952) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16944b58)
+2023-10-24T11:39:13.082+09:00 DEBUG 7243 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1dbc607d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@62b42406)
+2023-10-24T11:39:13.828+09:00  INFO 7243 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:39:13.832+09:00  INFO 7243 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:39:14.280+09:00  WARN 7243 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:39:14.899+09:00  INFO 7243 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:39:14.974+09:00  INFO 7243 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:39:14.991+09:00  INFO 7243 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 5.883 seconds (process running for 11.6)
+2023-10-24T11:39:16.685+09:00  INFO 7243 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:39:16.685+09:00  INFO 7243 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:39:16.687+09:00  INFO 7243 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-24T11:39:16.756+09:00  WARN 7243 --- [http-nio-8088-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------351150710772735750091867;charset=UTF-8' is not supported]
+2023-10-24T11:39:16.759+09:00  INFO 7243 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		58ms	0	0
+2023-10-24T11:39:16.760+09:00  INFO 7243 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------351150710772735750091867, Accept: */*, 0, []
+2023-10-24T11:39:16.760+09:00  INFO 7243 --- [http-nio-8088-exec-2] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:39:17.981+09:00  WARN 7243 --- [http-nio-8088-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------886591965368722282905436;charset=UTF-8' is not supported]
+2023-10-24T11:39:17.982+09:00  INFO 7243 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		7ms	0	0
+2023-10-24T11:39:17.983+09:00  INFO 7243 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------886591965368722282905436, Accept: */*, 0, []
+2023-10-24T11:39:17.983+09:00  INFO 7243 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:39:30.007+09:00  INFO 7243 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:39:30.009+09:00  INFO 7243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:39:30.018+09:00  INFO 7243 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:39:39.409+09:00  INFO 7267 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 7267 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:39:39.411+09:00  INFO 7267 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:39:40.386+09:00  INFO 7267 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:39:40.426+09:00  INFO 7267 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:39:40.512+09:00  WARN 7267 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:39:40.968+09:00  INFO 7267 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:39:40.976+09:00  INFO 7267 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:39:40.976+09:00  INFO 7267 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:39:41.074+09:00  INFO 7267 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:39:41.075+09:00  INFO 7267 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2023-10-24T11:39:41.329+09:00  INFO 7267 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:39:41.561+09:00  INFO 7267 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7493d937
+2023-10-24T11:39:41.562+09:00  INFO 7267 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:39:41.601+09:00  INFO 7267 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:39:41.649+09:00  INFO 7267 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:39:41.651+09:00  INFO 7267 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:39:41.962+09:00  INFO 7267 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d74507c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2a984952)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@16944b58) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1dbc607d)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@62b42406) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@a0e33db)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ef46749) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@40b54762)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@362cf66) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7809b43a)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65da4a5d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@fbe8fd3)
+2023-10-24T11:39:42.064+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1ab268bd) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2fafa7b5)
+2023-10-24T11:39:42.065+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@181098bf) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@632b5c79)
+2023-10-24T11:39:42.065+09:00 DEBUG 7267 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6a552721) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3815a7d1)
+2023-10-24T11:39:42.810+09:00  INFO 7267 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:39:42.813+09:00  INFO 7267 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:39:43.129+09:00  WARN 7267 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:39:43.682+09:00  INFO 7267 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:39:43.769+09:00  INFO 7267 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:39:43.783+09:00  INFO 7267 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 4.758 seconds (process running for 10.39)
+2023-10-24T11:39:48.529+09:00  INFO 7267 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:39:48.530+09:00  INFO 7267 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:39:48.532+09:00  INFO 7267 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-24T11:39:48.598+09:00  WARN 7267 --- [http-nio-8088-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------085472262947721247441557;charset=UTF-8' is not supported]
+2023-10-24T11:39:48.602+09:00  INFO 7267 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		57ms	0	0
+2023-10-24T11:39:48.603+09:00  INFO 7267 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------085472262947721247441557, Accept: */*, 0, []
+2023-10-24T11:39:48.603+09:00  INFO 7267 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:39:51.043+09:00  WARN 7267 --- [http-nio-8088-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------592490751049691821801607;charset=UTF-8' is not supported]
+2023-10-24T11:39:51.043+09:00  INFO 7267 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		5ms	0	0
+2023-10-24T11:39:51.044+09:00  INFO 7267 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------592490751049691821801607, Accept: */*, 0, []
+2023-10-24T11:39:51.044+09:00  INFO 7267 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:39:53.859+09:00  INFO 7267 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <-> 33bf9b31-7e54-473a-8d91-6e90c94ec3bd 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	260ms	0	1111
+2023-10-24T11:39:53.860+09:00  INFO 7267 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : >>> 33bf9b31-7e54-473a-8d91-6e90c94ec3bd Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:39:53.860+09:00  INFO 7267 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <<< 33bf9b31-7e54-473a-8d91-6e90c94ec3bd Content-Type: application/json, 1111, [{"txid":"33bf9b31-7e54-473a-8d91-6e90c94ec3bd","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"password":"password1","name":"User One","phone":"123-456-7890"},{"password":"password2","name":"User Two","phone":"987-654-3210"},{"password":"password3","name":"User Three","phone":"555-555-5555"},{"password":"password4","name":"User Four","phone":"888-888-8888"},{"password":"password5","name":"User Five","phone":"777-777-7777"},{"password":"password6","name":"User Six","phone":"111-111-1111"},{"password":"password7","name":"User Seven","phone":"999-999-9999"},{"password":"password8","name":"User Eight","phone":"777-111-2222"},{"password":"password9","name":"User Nine","phone":"555-111-8888"},{"password":"password10","name":"User Ten","phone":"444-000-9999"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":10,"last":true,"size":20,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698115193819}]
+2023-10-24T11:40:04.280+09:00  INFO 7267 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:40:04.283+09:00  INFO 7267 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:40:04.293+09:00  INFO 7267 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:40:13.302+09:00  INFO 7277 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 7277 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:40:13.304+09:00  INFO 7277 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:40:14.324+09:00  INFO 7277 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:40:14.380+09:00  INFO 7277 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:40:14.472+09:00  WARN 7277 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:40:14.940+09:00  INFO 7277 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:40:14.949+09:00  INFO 7277 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:40:14.949+09:00  INFO 7277 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:40:15.037+09:00  INFO 7277 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:40:15.037+09:00  INFO 7277 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2023-10-24T11:40:15.325+09:00  INFO 7277 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:40:15.530+09:00  INFO 7277 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bdb5e0f
+2023-10-24T11:40:15.533+09:00  INFO 7277 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:40:15.577+09:00  INFO 7277 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:40:15.624+09:00  INFO 7277 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:40:15.625+09:00  INFO 7277 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:40:15.936+09:00  INFO 7277 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:40:16.042+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5600a278) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@549d14fe)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@77d54a41) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@41026e5c)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@12421766) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2e44cb34)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@731e0bff) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@213ceb4e)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@23c72128) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2bd2430f)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2890e479) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6eb00cbe)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@74e4be21) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4d174189)
+2023-10-24T11:40:16.043+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@628bd77e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c30f26d)
+2023-10-24T11:40:16.044+09:00 DEBUG 7277 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d74507c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2a984952)
+2023-10-24T11:40:16.871+09:00  INFO 7277 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:40:16.874+09:00  INFO 7277 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:40:17.178+09:00  WARN 7277 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:40:17.884+09:00  INFO 7277 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:40:17.972+09:00  INFO 7277 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:40:17.987+09:00  INFO 7277 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 5.073 seconds (process running for 10.734)
+2023-10-24T11:40:18.427+09:00  INFO 7277 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:40:18.428+09:00  INFO 7277 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:40:18.429+09:00  INFO 7277 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-24T11:40:18.703+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <-> 134e47c1-5a5f-4553-b5f4-fc1d85dac4c0 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	261ms	0	1392
+2023-10-24T11:40:18.703+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : >>> 134e47c1-5a5f-4553-b5f4-fc1d85dac4c0 Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:40:18.704+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <<< 134e47c1-5a5f-4553-b5f4-fc1d85dac4c0 Content-Type: application/json, 1392, [{"txid":"134e47c1-5a5f-4553-b5f4-fc1d85dac4c0","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"email":"user1@example.com","password":"password1","name":"User One","phone":"123-456-7890"},{"email":"user2@example.com","password":"password2","name":"User Two","phone":"987-654-3210"},{"email":"user3@example.com","password":"password3","name":"User Three","phone":"555-555-5555"},{"email":"user4@example.com","password":"password4","name":"User Four","phone":"888-888-8888"},{"email":"user5@example.com","password":"password5","name":"User Five","phone":"777-777-7777"},{"email":"user6@example.com","password":"password6","name":"User Six","phone":"111-111-1111"},{"email":"user7@example.com","password":"password7","name":"User Seven","phone":"999-999-9999"},{"email":"user8@example.com","password":"password8","name":"User Eight","phone":"777-111-2222"},{"email":"user9@example.com","password":"password9","name":"User Nine","phone":"555-111-8888"},{"email":"user10@example.com","password":"password10","name":"User Ten","phone":"444-000-9999"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":10,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698115218625}]
+2023-10-24T11:40:21.883+09:00  INFO 7277 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <-> c4d026b9-8c9a-4f07-b12a-71efb85662f9 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	21ms	0	1392
+2023-10-24T11:40:21.884+09:00  INFO 7277 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : >>> c4d026b9-8c9a-4f07-b12a-71efb85662f9 Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:40:21.885+09:00  INFO 7277 --- [http-nio-8088-exec-3] k.l.e.c.filters.LoggingReqResFilter      : <<< c4d026b9-8c9a-4f07-b12a-71efb85662f9 Content-Type: application/json, 1392, [{"txid":"c4d026b9-8c9a-4f07-b12a-71efb85662f9","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"email":"user1@example.com","password":"password1","name":"User One","phone":"123-456-7890"},{"email":"user2@example.com","password":"password2","name":"User Two","phone":"987-654-3210"},{"email":"user3@example.com","password":"password3","name":"User Three","phone":"555-555-5555"},{"email":"user4@example.com","password":"password4","name":"User Four","phone":"888-888-8888"},{"email":"user5@example.com","password":"password5","name":"User Five","phone":"777-777-7777"},{"email":"user6@example.com","password":"password6","name":"User Six","phone":"111-111-1111"},{"email":"user7@example.com","password":"password7","name":"User Seven","phone":"999-999-9999"},{"email":"user8@example.com","password":"password8","name":"User Eight","phone":"777-111-2222"},{"email":"user9@example.com","password":"password9","name":"User Nine","phone":"555-111-8888"},{"email":"user10@example.com","password":"password10","name":"User Ten","phone":"444-000-9999"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":10,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698115221881}]
+2023-10-24T11:41:18.016+09:00  WARN 7277 --- [http-nio-8088-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2023-10-24T11:41:18.018+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		8ms	1	0
+2023-10-24T11:41:18.018+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: text/plain, Accept: */*, 1, [{]
+2023-10-24T11:41:18.018+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:45:55.586+09:00  INFO 7277 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : <-> 9fbb23c2-07db-4e4e-b9c4-b4828ad88417 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	200	0000	244ms	112	139
+2023-10-24T11:45:55.590+09:00  INFO 7277 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : >>> 9fbb23c2-07db-4e4e-b9c4-b4828ad88417 Content-Type: application/json, Accept: */*, 112, [{
+  "email": "user@example.com",
+  "password": "password123",
+  "name": "John Doe",
+  "phone": "123-456-7890"
+}
+]
+2023-10-24T11:45:55.590+09:00  INFO 7277 --- [http-nio-8088-exec-6] k.l.e.c.filters.LoggingReqResFilter      : <<< 9fbb23c2-07db-4e4e-b9c4-b4828ad88417 Content-Type: application/json, 139, [{"txid":"9fbb23c2-07db-4e4e-b9c4-b4828ad88417","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698115555577}]
+2023-10-24T11:46:12.907+09:00  WARN 7277 --- [http-nio-8088-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------246928877566144483961340;charset=UTF-8' is not supported]
+2023-10-24T11:46:12.908+09:00  INFO 7277 --- [http-nio-8088-exec-8] k.l.e.c.filters.LoggingReqResFilter      : <->  	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	415		36ms	0	0
+2023-10-24T11:46:12.909+09:00  INFO 7277 --- [http-nio-8088-exec-8] k.l.e.c.filters.LoggingReqResFilter      : >>>  Content-Type: multipart/form-data; boundary=--------------------------246928877566144483961340, Accept: */*, 0, []
+2023-10-24T11:46:12.909+09:00  INFO 7277 --- [http-nio-8088-exec-8] k.l.e.c.filters.LoggingReqResFilter      : <<<  Content-Type: null, 0, []
+2023-10-24T11:46:16.639+09:00  INFO 7277 --- [http-nio-8088-exec-9] k.l.e.c.filters.LoggingReqResFilter      : <-> 7d71a691-f8f6-4e00-a990-e9766abb7465 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	200	0000	15ms	112	139
+2023-10-24T11:46:16.639+09:00  INFO 7277 --- [http-nio-8088-exec-9] k.l.e.c.filters.LoggingReqResFilter      : >>> 7d71a691-f8f6-4e00-a990-e9766abb7465 Content-Type: application/json, Accept: */*, 112, [{
+  "email": "user@example.com",
+  "password": "password123",
+  "name": "John Doe",
+  "phone": "123-456-7890"
+}
+]
+2023-10-24T11:46:16.639+09:00  INFO 7277 --- [http-nio-8088-exec-9] k.l.e.c.filters.LoggingReqResFilter      : <<< 7d71a691-f8f6-4e00-a990-e9766abb7465 Content-Type: application/json, 139, [{"txid":"7d71a691-f8f6-4e00-a990-e9766abb7465","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698115576637}]
+2023-10-24T11:46:24.536+09:00  INFO 7277 --- [http-nio-8088-exec-10] k.l.e.c.filters.LoggingReqResFilter      : <-> 5f9e7738-3da4-47ad-a561-010b7a3f89ae 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	21ms	0	1487
+2023-10-24T11:46:24.537+09:00  INFO 7277 --- [http-nio-8088-exec-10] k.l.e.c.filters.LoggingReqResFilter      : >>> 5f9e7738-3da4-47ad-a561-010b7a3f89ae Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:46:24.537+09:00  INFO 7277 --- [http-nio-8088-exec-10] k.l.e.c.filters.LoggingReqResFilter      : <<< 5f9e7738-3da4-47ad-a561-010b7a3f89ae Content-Type: application/json, 1487, [{"txid":"5f9e7738-3da4-47ad-a561-010b7a3f89ae","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"email":"user1@example.com","password":"password1","name":"User One","phone":"123-456-7890"},{"email":"user2@example.com","password":"password2","name":"User Two","phone":"987-654-3210"},{"email":"user3@example.com","password":"password3","name":"User Three","phone":"555-555-5555"},{"email":"user4@example.com","password":"password4","name":"User Four","phone":"888-888-8888"},{"email":"user5@example.com","password":"password5","name":"User Five","phone":"777-777-7777"},{"email":"user6@example.com","password":"password6","name":"User Six","phone":"111-111-1111"},{"email":"user7@example.com","password":"password7","name":"User Seven","phone":"999-999-9999"},{"email":"user8@example.com","password":"password8","name":"User Eight","phone":"777-111-2222"},{"email":"user9@example.com","password":"password9","name":"User Nine","phone":"555-111-8888"},{"email":"user10@example.com","password":"password10","name":"User Ten","phone":"444-000-9999"},{"email":"user@example.com","password":"password123","name":"John Doe","phone":"123-456-7890"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":11,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":11,"first":true,"empty":false},"timestamp":1698115584533}]
+2023-10-24T11:53:08.373+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <-> 66c0a8c4-cd53-49bd-ba78-cfd685e1c74b 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	200	0000	64ms	112	139
+2023-10-24T11:53:08.376+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : >>> 66c0a8c4-cd53-49bd-ba78-cfd685e1c74b Content-Type: application/json, Accept: */*, 112, [{
+  "email": "user@example.com",
+  "password": "password123",
+  "name": "John Doe",
+  "phone": "123-456-7890"
+}
+]
+2023-10-24T11:53:08.377+09:00  INFO 7277 --- [http-nio-8088-exec-1] k.l.e.c.filters.LoggingReqResFilter      : <<< 66c0a8c4-cd53-49bd-ba78-cfd685e1c74b Content-Type: application/json, 139, [{"txid":"66c0a8c4-cd53-49bd-ba78-cfd685e1c74b","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698115988363}]
+2023-10-24T11:53:15.749+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <-> 6e8a87b5-39be-4bbb-8e1b-9cc24467bbb4 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list	200	0000	34ms	0	1487
+2023-10-24T11:53:15.750+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : >>> 6e8a87b5-39be-4bbb-8e1b-9cc24467bbb4 Content-Type: null, Accept: */*, 0, []
+2023-10-24T11:53:15.751+09:00  INFO 7277 --- [http-nio-8088-exec-4] k.l.e.c.filters.LoggingReqResFilter      : <<< 6e8a87b5-39be-4bbb-8e1b-9cc24467bbb4 Content-Type: application/json, 1487, [{"txid":"6e8a87b5-39be-4bbb-8e1b-9cc24467bbb4","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"email":"user1@example.com","password":"password1","name":"User One","phone":"123-456-7890"},{"email":"user2@example.com","password":"password2","name":"User Two","phone":"987-654-3210"},{"email":"user3@example.com","password":"password3","name":"User Three","phone":"555-555-5555"},{"email":"user4@example.com","password":"password4","name":"User Four","phone":"888-888-8888"},{"email":"user5@example.com","password":"password5","name":"User Five","phone":"777-777-7777"},{"email":"user6@example.com","password":"password6","name":"User Six","phone":"111-111-1111"},{"email":"user7@example.com","password":"password7","name":"User Seven","phone":"999-999-9999"},{"email":"user8@example.com","password":"password8","name":"User Eight","phone":"777-111-2222"},{"email":"user9@example.com","password":"password9","name":"User Nine","phone":"555-111-8888"},{"email":"user10@example.com","password":"password10","name":"User Ten","phone":"444-000-9999"},{"email":"user@example.com","password":"password123","name":"John Doe","phone":"123-456-7890"}],"pageable":{"pageNumber":0,"pageSize":20,"sort":{"empty":true,"sorted":false,"unsorted":true},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":11,"last":true,"size":20,"number":0,"sort":{"empty":true,"sorted":false,"unsorted":true},"numberOfElements":11,"first":true,"empty":false},"timestamp":1698115995744}]
+2023-10-24T11:56:10.864+09:00  INFO 7277 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:56:10.900+09:00  INFO 7277 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-24T11:56:10.930+09:00  INFO 7277 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-24T11:56:21.138+09:00  INFO 7675 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 7675 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-24T11:56:21.140+09:00  INFO 7675 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-24T11:56:22.012+09:00  INFO 7675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-24T11:56:22.057+09:00  INFO 7675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2023-10-24T11:56:22.139+09:00  WARN 7675 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-24T11:56:22.602+09:00  INFO 7675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-24T11:56:22.611+09:00  INFO 7675 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-24T11:56:22.611+09:00  INFO 7675 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-24T11:56:22.681+09:00  INFO 7675 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-24T11:56:22.682+09:00  INFO 7675 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1508 ms
+2023-10-24T11:56:22.872+09:00  INFO 7675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-24T11:56:23.160+09:00  INFO 7675 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53e93fb7
+2023-10-24T11:56:23.164+09:00  INFO 7675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-24T11:56:23.228+09:00  INFO 7675 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-24T11:56:23.317+09:00  INFO 7675 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-24T11:56:23.319+09:00  INFO 7675 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-24T11:56:23.571+09:00  INFO 7675 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-24T11:56:23.688+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ef60c02) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5d9d8e46)
+2023-10-24T11:56:23.688+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d0a14c2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5b64f771)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@153c6603) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@24e2355c)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@19739906) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@65503a26)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@13aa54f1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@26d7cb0d)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@23e9dd78) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@470c4229)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6408be5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@1e57b783)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@73b8ab2c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5600a278)
+2023-10-24T11:56:23.689+09:00 DEBUG 7675 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@549d14fe) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@77d54a41)
+2023-10-24T11:56:24.423+09:00  INFO 7675 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-24T11:56:24.428+09:00  INFO 7675 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-24T11:56:24.809+09:00  WARN 7675 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-24T11:56:25.429+09:00  INFO 7675 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-24T11:56:25.512+09:00  INFO 7675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-24T11:56:25.534+09:00  INFO 7675 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 4.771 seconds (process running for 10.344)
+2023-10-24T11:56:28.488+09:00  INFO 7675 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24T11:56:28.488+09:00  INFO 7675 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T11:56:28.490+09:00  INFO 7675 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

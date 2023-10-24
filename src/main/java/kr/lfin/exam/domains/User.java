@@ -4,7 +4,10 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import static kr.lfin.exam.SHA256.hashString;
+
 @Entity
+//@Table(name = "user")
 @Getter
 @Setter
 public class User {
@@ -23,4 +26,8 @@ public class User {
         user.setPhone(phone);
         return user;
     }
+
+//    public String SHA256(String password){
+//        return hashString(password);
+//    }
 }

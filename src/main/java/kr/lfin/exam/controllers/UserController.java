@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     private final UserService userService;
 
-    @PostMapping
+    @PostMapping("/signup")
     public ResponseEntity<ApiResult> insert(@RequestBody User user) {
         userService.insert(user);
         return ResponseEntity.ok().body(new ApiResult());
