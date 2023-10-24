@@ -1,6 +1,5 @@
 package kr.lfin.exam.common.utils;
 
-import kr.lfin.exam.utils.TxidUtil;
 import lombok.*;
 import java.time.Instant;
 import java.util.HashMap;

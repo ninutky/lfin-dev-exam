@@ -1,4 +1,4 @@
-package kr.lfin.exam.utils;
+package kr.lfin.exam.common.utils;
 
 import java.util.UUID;
 
