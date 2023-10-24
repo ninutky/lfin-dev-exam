@@ -35,6 +35,8 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 
+	implementation 'commons-codec:commons-codec:1.15'
+
 	// query dsl
 	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 	annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
