@@ -25,15 +25,15 @@ logging:
             file-name-pattern: "./logs/app.log.%d{yyyyMMdd}.%i"
             max-history: 30
             max-file-size: 100MB
-#
+
 spring:
   config:
     activate:
       on-profile: local
   datasource:
-    url: jdbc:mysql://localhost:3306/exam?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/exam?serverTimezone=Asia/Seoul&characterEncoding=UTF-8&createDatabaseIfNotExist=true&useSSL=false&useLegacyDatetimeCode=false&
     username: root
-    password:
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
   logging.level:
     org.hibernate.orm.jdbc.bind: trace

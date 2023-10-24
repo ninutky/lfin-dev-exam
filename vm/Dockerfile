@@ -54,7 +54,7 @@ RUN chown -R ubuntu:ubuntu ${APP_DIR}
 USER ubuntu
 
 # Listen Port
-EXPOSE 8099
+EXPOSE 8088
 
 #ENTRYPOINT에서는 ARG를 곧바로 사용할 수 없음.
 #ARG -> ENV -> ENTRYPOINT
