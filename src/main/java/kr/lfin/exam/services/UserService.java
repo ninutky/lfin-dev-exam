@@ -1,6 +1,7 @@
 package kr.lfin.exam.services;
 
 import kr.lfin.exam.domains.User;
+import kr.lfin.exam.domains.UserVO;
 import kr.lfin.exam.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -17,8 +18,8 @@ public class UserService {
         return userRepository.findAll(pageable);
     }
 
-    public void insert(User u) {
-        User user = User.createUser(u.getEmail(), u.getPassword(), u.getName(), u.getPhone());
+    public void insert(UserVO userVO) {
+        User user = User.createUser(userVO.getEmail(), userVO.getPassword(), userVO.getName(), userVO.getPhone());
         userRepository.save(user);
     }
 }

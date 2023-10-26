@@ -3,6 +3,7 @@ package kr.lfin.exam.controllers;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import kr.lfin.exam.common.utils.ApiResult;
 import kr.lfin.exam.domains.User;
+import kr.lfin.exam.domains.UserVO;
 import kr.lfin.exam.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
@@ -19,8 +20,8 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/signup")
-    public ResponseEntity<ApiResult> insert(@RequestBody User user) {
-        userService.insert(user);
+    public ResponseEntity<ApiResult> insert(@RequestBody UserVO userVO) {
+        userService.insert(userVO);
         return ResponseEntity.ok().body(new ApiResult());
     }
 
