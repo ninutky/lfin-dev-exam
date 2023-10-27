@@ -1,14 +1,16 @@
 package kr.lfin.exam.domains;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
 @Entity
 //@Table(name = "user")
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,13 +23,13 @@ public class User extends BaseTimeEntity {
     private Boolean deleted;
 
     public static User createUser(String email, String password, String name, String phone) {
-        User user = new User();
-        user.setEmail(email);
-        user.setPassword(bcryptHashPassword(password));
-        user.setName(name);
-        user.setPhone(phone);
-        user.setDeleted(false);
-        return user;
+        return User.builder()
+                .email(email)
+                .password(bcryptHashPassword(password))
+                .name(name)
+                .phone(phone)
+                .deleted(false)
+                .build();
     }
 
     public static String bcryptHashPassword(String password){
