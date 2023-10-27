@@ -1,5 +1,6 @@
 package kr.lfin.exam.domains;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.crypto.bcrypt.BCrypt;
@@ -17,6 +18,7 @@ public class User extends BaseTimeEntity {
     private Long uId;
     @Column(unique = true)
     private String email;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     private String name;
     private String phone;
