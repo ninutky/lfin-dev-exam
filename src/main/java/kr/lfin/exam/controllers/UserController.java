@@ -2,16 +2,12 @@ package kr.lfin.exam.controllers;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
 import kr.lfin.exam.common.utils.ApiResult;
-import kr.lfin.exam.domains.User;
 import kr.lfin.exam.domains.UserVO;
 import kr.lfin.exam.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -29,6 +25,12 @@ public class UserController {
     public ResponseEntity<ApiResult> findAll(final Pageable pageable) {
         return ResponseEntity.ok().body(
                 new ApiResult(userService.findAll(pageable)));
+    }
+
+    @PutMapping( "/{id}")
+    public ResponseEntity<ApiResult> update(@PathVariable Long id, @RequestBody UserVO userVO) {
+        userService.update(id, userVO);
+        return ResponseEntity.ok().body(new ApiResult());
     }
 
 }
