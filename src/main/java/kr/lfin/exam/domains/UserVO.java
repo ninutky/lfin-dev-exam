@@ -13,5 +13,5 @@ public class UserVO {
     private String name;
     private String phone;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private Boolean deleted = false;
+    private Boolean deleted;
 }

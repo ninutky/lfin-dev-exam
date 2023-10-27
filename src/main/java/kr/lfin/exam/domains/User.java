@@ -22,15 +22,15 @@ public class User extends BaseTimeEntity {
     private String password;
     private String name;
     private String phone;
-    private Boolean deleted = false;
+    private Boolean deleted;
 
-    public static User createUser(String email, String password, String name, String phone) {
+    public static User createUser(String email, String password, String name, String phone, Boolean deleted) {
         return User.builder()
                 .email(email)
                 .password(bcryptHashPassword(password))
                 .name(name)
                 .phone(phone)
-                .deleted(false)
+                .deleted(deleted)
                 .build();
     }
 
