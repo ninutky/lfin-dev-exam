@@ -18,6 +18,7 @@ public class User extends BaseTimeEntity {
     private String password;
     private String name;
     private String phone;
+    private Boolean deleted;
 
     public static User createUser(String email, String password, String name, String phone) {
         User user = new User();
@@ -25,6 +26,7 @@ public class User extends BaseTimeEntity {
         user.setPassword(bcryptHashPassword(password));
         user.setName(name);
         user.setPhone(phone);
+        user.setDeleted(false);
         return user;
     }
 

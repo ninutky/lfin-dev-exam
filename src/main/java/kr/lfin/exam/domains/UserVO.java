@@ -1,5 +1,6 @@
 package kr.lfin.exam.domains;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,4 +12,6 @@ public class UserVO {
     private String password;
     private String name;
     private String phone;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    private Boolean deleted;
 }

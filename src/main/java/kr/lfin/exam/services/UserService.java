@@ -42,11 +42,17 @@ public class UserService {
                 user.setPhone(userVO.getPhone());
             }
 
-            userRepository.save(user);
         } else {
             throw new ResourceNotFoundException();
         }
     }
+
+    public void deleteById(Long id) {
+        User user = userRepository.findById(id).orElseThrow(ResourceNotFoundException::new);
+        user.setDeleted(true);
+        userRepository.save(user);
+    }
+
 }
 
 

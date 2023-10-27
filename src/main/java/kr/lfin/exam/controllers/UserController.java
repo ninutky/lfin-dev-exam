@@ -33,4 +33,9 @@ public class UserController {
         return ResponseEntity.ok().body(new ApiResult());
     }
 
+    @PutMapping( "delete/{id}")
+    public ResponseEntity<ApiResult> deleteById(@PathVariable Long id) {
+        userService.deleteById(id);
+        return ResponseEntity.ok().body(new ApiResult());
+    }
 }
