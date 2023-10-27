@@ -33,7 +33,7 @@ public class UserService {
             User user = userOptional.get();
 
             if (userVO.getPassword() != null) {
-                user.setPassword(userVO.getPassword());
+                user.setPassword(User.bcryptHashPassword(userVO.getPassword()));
             }
             if (userVO.getName() != null) {
                 user.setName(userVO.getName());
@@ -41,6 +41,7 @@ public class UserService {
             if (userVO.getPhone() != null) {
                 user.setPhone(userVO.getPhone());
             }
+            userRepository.save(user);
 
         } else {
             throw new ResourceNotFoundException();
