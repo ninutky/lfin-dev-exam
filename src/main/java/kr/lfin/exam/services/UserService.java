@@ -1,5 +1,7 @@
 package kr.lfin.exam.services;
 
+import jakarta.transaction.Transactional;
+import kr.lfin.exam.common.exception.DeletedResourceException;
 import kr.lfin.exam.common.exception.DuplicateEmailException;
 import kr.lfin.exam.common.exception.ResourceNotFoundException;
 import kr.lfin.exam.domains.User;
@@ -30,14 +32,17 @@ public class UserService {
         userRepository.save(user);
     }
 
-    
 
+
+    @Transactional
     public void update(Long id, UserVO userVO) {
         Optional<User> userOptional = userRepository.findById(id);
 
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-
+            if(user.getDeleted()){
+                throw new DeletedResourceException();
+            }
             if (userVO.getPassword() != null) {
                 user.setPassword(User.bcryptHashPassword(userVO.getPassword()));
             }

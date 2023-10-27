@@ -22,7 +22,7 @@ public class User extends BaseTimeEntity {
     private String password;
     private String name;
     private String phone;
-    private Boolean deleted;
+    private Boolean deleted = false;
 
     public static User createUser(String email, String password, String name, String phone) {
         return User.builder()
