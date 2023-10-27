@@ -1,5 +1,6 @@
 package kr.lfin.exam.services;
 
+import kr.lfin.exam.common.exception.DuplicateEmailException;
 import kr.lfin.exam.common.exception.ResourceNotFoundException;
 import kr.lfin.exam.domains.User;
 import kr.lfin.exam.domains.UserVO;
@@ -23,8 +24,13 @@ public class UserService {
 
     public void insert(UserVO userVO) {
         User user = User.createUser(userVO.getEmail(), userVO.getPassword(), userVO.getName(), userVO.getPhone());
+        if (userRepository.existsByEmail(userVO.getEmail())) {
+            throw new DuplicateEmailException();
+        }
         userRepository.save(user);
     }
+
+    
 
     public void update(Long id, UserVO userVO) {
         Optional<User> userOptional = userRepository.findById(id);

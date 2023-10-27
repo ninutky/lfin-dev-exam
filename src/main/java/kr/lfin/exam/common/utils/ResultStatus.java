@@ -15,7 +15,8 @@ public enum ResultStatus {
     CLIENT_DELETED_RESOURCE("1003","삭제된 리소스입니다."),
     CLIENT_NOT_FOUND_RESOURCE("1001", "리소스를 찾을 수 없습니다."),
     CLIENT_EXIST_CHILDREN_DATA("1004", "하위 데이터가 존재합니다."),
-    CLIENT_INVALID_REQUEST("1002", "형식이 올바르지 않습니다.");
+    CLIENT_INVALID_REQUEST("1002", "형식이 올바르지 않습니다."),
+    CLIENT_DUPLICATE_EMAIL("1005", "이미 존재하는 이메일입니다.");
 
     private final String status;
     private final String message;

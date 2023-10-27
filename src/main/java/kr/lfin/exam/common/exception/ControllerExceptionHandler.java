@@ -41,4 +41,8 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(ExistChildrenDataException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public ApiResult existChildrenDataException(){return new ApiResult(ResultStatus.CLIENT_EXIST_CHILDREN_DATA);}
+
+    @ExceptionHandler(DuplicateEmailException.class)
+    @ResponseStatus(value = HttpStatus.BAD_REQUEST)
+    public ApiResult duplicateEmailException(){return new ApiResult(ResultStatus.CLIENT_DUPLICATE_EMAIL);}
 }
