@@ -25,7 +25,13 @@ public class UserService {
     }
 
     public Page<User> findByDeletedFalse(Pageable pageable) {
-        return userRepository.findByDeletedFalse(pageable);
+        Page<User> page = userRepository.findByDeletedFalse(pageable);
+
+        if (page == null || page.isEmpty()) {
+            throw new ResourceNotFoundException();
+        }
+
+        return page;
     }
 
     public void insert(UserVO userVO) {
