@@ -928,3 +928,174 @@ Caused by: java.lang.IllegalStateException: Method must not have Pageable *and* 
 2023-10-30T14:10:34.401+09:00  INFO 10242 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <-> 5832a5b8-f40e-4db5-a74c-947ed84a1ee8 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=5	200	0000	45ms	0	1229
 2023-10-30T14:10:34.407+09:00  INFO 10242 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : >>> 5832a5b8-f40e-4db5-a74c-947ed84a1ee8 Content-Type: null, Accept: */*, 0, []
 2023-10-30T14:10:34.408+09:00  INFO 10242 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <<< 5832a5b8-f40e-4db5-a74c-947ed84a1ee8 Content-Type: application/json, 1229, [{"txid":"5832a5b8-f40e-4db5-a74c-947ed84a1ee8","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-27T11:13:19","updatedAt":"2023-10-27T11:13:19","email":"user3@example.com","name":"user3","phone":"03-000-000","deleted":false,"uid":3},{"createdAt":"2023-10-27T11:13:31","updatedAt":"2023-10-27T11:13:31","email":"user5@example.com","name":"user5","phone":"05-000-000","deleted":false,"uid":5},{"createdAt":"2023-10-27T11:13:38","updatedAt":"2023-10-27T11:13:38","email":"user6@example.com","name":"user6","phone":"06-000-000","deleted":false,"uid":6},{"createdAt":"2023-10-27T11:13:44","updatedAt":"2023-10-27T11:13:44","email":"user7@example.com","name":"user7","phone":"07-000-000","deleted":false,"uid":7},{"createdAt":"2023-10-27T11:13:57","updatedAt":"2023-10-27T11:13:57","email":"user8@example.com","name":"user8","phone":"08-000-000","deleted":false,"uid":8}],"pageable":{"pageNumber":0,"pageSize":5,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":4,"totalElements":18,"last":false,"size":5,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":5,"first":true,"empty":false},"timestamp":1698642634388}]
+2023-10-30T14:14:39.946+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <-> e9e16994-9dd2-4e45-b64a-36f94ae33182 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1005	365ms	109	129
+2023-10-30T14:14:39.947+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : >>> e9e16994-9dd2-4e45-b64a-36f94ae33182 Content-Type: application/json, Accept: */*, 109, [{
+    "email": "user1@example.com",
+    "password": "pw21",
+    "name": "user21",
+    "phone": "21-000-000"
+}]
+2023-10-30T14:14:39.947+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <<< e9e16994-9dd2-4e45-b64a-36f94ae33182 Content-Type: application/json, 129, [{"txid":"e9e16994-9dd2-4e45-b64a-36f94ae33182","status":"1005","message":"이미 존재하는 이메일입니다.","data":null,"timestamp":1698642879943}]
+2023-10-30T14:14:55.503+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <-> ecd97372-dad1-42f3-98d1-0e61d9a4bd02 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1005	122ms	107	129
+2023-10-30T14:14:55.506+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : >>> ecd97372-dad1-42f3-98d1-0e61d9a4bd02 Content-Type: application/json, Accept: */*, 107, [{
+    "email": "user1@example.com",
+    "password": "pw1",
+    "name": "user1",
+    "phone": "01-000-000"
+}]
+2023-10-30T14:14:55.507+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <<< ecd97372-dad1-42f3-98d1-0e61d9a4bd02 Content-Type: application/json, 129, [{"txid":"ecd97372-dad1-42f3-98d1-0e61d9a4bd02","status":"1005","message":"이미 존재하는 이메일입니다.","data":null,"timestamp":1698642895502}]
+2023-10-30T14:17:33.431+09:00  WARN 10242 --- [http-nio-8088-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2023-10-30T14:17:33.432+09:00 ERROR 10242 --- [http-nio-8088-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'deleted' cannot be null
+2023-10-30T14:17:33.457+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> 97864271-f8c0-4eb8-a0de-8adfbe91f19e 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1002	389ms	110	128
+2023-10-30T14:17:33.457+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> 97864271-f8c0-4eb8-a0de-8adfbe91f19e Content-Type: application/json, Accept: */*, 110, [{
+    "email": "user22@example.com",
+    "password": "pw22",
+    "name": "user22",
+    "phone": "22-000-000"
+}]
+2023-10-30T14:17:33.457+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< 97864271-f8c0-4eb8-a0de-8adfbe91f19e Content-Type: application/json, 128, [{"txid":"97864271-f8c0-4eb8-a0de-8adfbe91f19e","status":"1002","message":"형식이 올바르지 않습니다.","data":null,"timestamp":1698643053454}]
+2023-10-30T14:17:50.708+09:00  WARN 10242 --- [http-nio-8088-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2023-10-30T14:17:50.709+09:00 ERROR 10242 --- [http-nio-8088-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'deleted' cannot be null
+2023-10-30T14:17:50.715+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <-> dae74a9e-f186-4ed7-9282-44c76c6af153 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1002	126ms	110	128
+2023-10-30T14:17:50.716+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : >>> dae74a9e-f186-4ed7-9282-44c76c6af153 Content-Type: application/json, Accept: */*, 110, [{
+    "email": "user22@example.com",
+    "password": "pw22",
+    "name": "user22",
+    "phone": "22-000-000"
+}]
+2023-10-30T14:17:50.716+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <<< dae74a9e-f186-4ed7-9282-44c76c6af153 Content-Type: application/json, 128, [{"txid":"dae74a9e-f186-4ed7-9282-44c76c6af153","status":"1002","message":"형식이 올바르지 않습니다.","data":null,"timestamp":1698643070714}]
+2023-10-30T14:18:10.513+09:00  WARN 10242 --- [http-nio-8088-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2023-10-30T14:18:10.513+09:00 ERROR 10242 --- [http-nio-8088-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'deleted' cannot be null
+2023-10-30T14:18:10.519+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <-> d0867e0a-c965-4c65-9757-a0795edb7abf 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1002	129ms	110	128
+2023-10-30T14:18:10.519+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : >>> d0867e0a-c965-4c65-9757-a0795edb7abf Content-Type: application/json, Accept: */*, 110, [{
+    "email": "user22@example.com",
+    "password": "pw22",
+    "name": "user22",
+    "phone": "22-000-000"
+}]
+2023-10-30T14:18:10.519+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <<< d0867e0a-c965-4c65-9757-a0795edb7abf Content-Type: application/json, 128, [{"txid":"d0867e0a-c965-4c65-9757-a0795edb7abf","status":"1002","message":"형식이 올바르지 않습니다.","data":null,"timestamp":1698643090518}]
+2023-10-30T14:18:13.657+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <-> ca8a52e4-95a3-4ef4-94e8-4376190a2425 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=5	200	0000	20ms	0	1229
+2023-10-30T14:18:13.657+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : >>> ca8a52e4-95a3-4ef4-94e8-4376190a2425 Content-Type: null, Accept: */*, 0, []
+2023-10-30T14:18:13.657+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <<< ca8a52e4-95a3-4ef4-94e8-4376190a2425 Content-Type: application/json, 1229, [{"txid":"ca8a52e4-95a3-4ef4-94e8-4376190a2425","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-27T11:13:19","updatedAt":"2023-10-27T11:13:19","email":"user3@example.com","name":"user3","phone":"03-000-000","deleted":false,"uid":3},{"createdAt":"2023-10-27T11:13:31","updatedAt":"2023-10-27T11:13:31","email":"user5@example.com","name":"user5","phone":"05-000-000","deleted":false,"uid":5},{"createdAt":"2023-10-27T11:13:38","updatedAt":"2023-10-27T11:13:38","email":"user6@example.com","name":"user6","phone":"06-000-000","deleted":false,"uid":6},{"createdAt":"2023-10-27T11:13:44","updatedAt":"2023-10-27T11:13:44","email":"user7@example.com","name":"user7","phone":"07-000-000","deleted":false,"uid":7},{"createdAt":"2023-10-27T11:13:57","updatedAt":"2023-10-27T11:13:57","email":"user8@example.com","name":"user8","phone":"08-000-000","deleted":false,"uid":8}],"pageable":{"pageNumber":0,"pageSize":5,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":4,"totalElements":18,"last":false,"size":5,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":5,"first":true,"empty":false},"timestamp":1698643093653}]
+2023-10-30T14:19:13.946+09:00  INFO 10242 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : <-> 22ada928-b9a7-4ba5-9cb5-483b67ecf411 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /delete/2	200	0000	74ms	0	139
+2023-10-30T14:19:13.947+09:00  INFO 10242 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : >>> 22ada928-b9a7-4ba5-9cb5-483b67ecf411 Content-Type: null, Accept: */*, 0, []
+2023-10-30T14:19:13.948+09:00  INFO 10242 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : <<< 22ada928-b9a7-4ba5-9cb5-483b67ecf411 Content-Type: application/json, 139, [{"txid":"22ada928-b9a7-4ba5-9cb5-483b67ecf411","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698643153936}]
+2023-10-30T14:45:03.779+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <-> 8e9f90b5-7f7c-4a07-ba75-422d8c25e2e3 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /2	400	1003	96ms	78	125
+2023-10-30T14:45:03.801+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : >>> 8e9f90b5-7f7c-4a07-ba75-422d8c25e2e3 Content-Type: application/json, Accept: */*, 78, [{
+    "password" : "asd000",
+    "name" : "asd2",
+    "phone" : "00-000-000"
+}]
+2023-10-30T14:45:03.801+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <<< 8e9f90b5-7f7c-4a07-ba75-422d8c25e2e3 Content-Type: application/json, 125, [{"txid":"8e9f90b5-7f7c-4a07-ba75-422d8c25e2e3","status":"1003","message":"삭제된 리소스입니다.","data":null,"timestamp":1698644703768}]
+2023-10-30T14:55:23.649+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <-> aabfc19d-63d0-4dd0-b006-fe1b43ff5d82 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /100	400	1001	58ms	78	129
+2023-10-30T14:55:23.653+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : >>> aabfc19d-63d0-4dd0-b006-fe1b43ff5d82 Content-Type: application/json, Accept: */*, 78, [{
+    "password" : "asd000",
+    "name" : "asd2",
+    "phone" : "00-000-000"
+}]
+2023-10-30T14:55:23.654+09:00  INFO 10242 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <<< aabfc19d-63d0-4dd0-b006-fe1b43ff5d82 Content-Type: application/json, 129, [{"txid":"aabfc19d-63d0-4dd0-b006-fe1b43ff5d82","status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1698645323639}]
+2023-10-30T15:02:48.095+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <-> 2bdf3544-75e8-4826-bb07-49f8217c88e8 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /delete/100	400	1001	31ms	0	129
+2023-10-30T15:02:48.096+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : >>> 2bdf3544-75e8-4826-bb07-49f8217c88e8 Content-Type: null, Accept: */*, 0, []
+2023-10-30T15:02:48.098+09:00  INFO 10242 --- [http-nio-8088-exec-8] k.l.e.common.aspect.HttpLoggingAspect    : <<< 2bdf3544-75e8-4826-bb07-49f8217c88e8 Content-Type: application/json, 129, [{"txid":"2bdf3544-75e8-4826-bb07-49f8217c88e8","status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1698645768090}]
+2023-10-30T15:06:22.844+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <-> dea2a752-bf5d-479d-9a78-d8b17f25579f 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /100	400	1001	20ms	78	129
+2023-10-30T15:06:22.845+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : >>> dea2a752-bf5d-479d-9a78-d8b17f25579f Content-Type: application/json, Accept: */*, 78, [{
+    "password" : "asd000",
+    "name" : "asd2",
+    "phone" : "00-000-000"
+}]
+2023-10-30T15:06:22.845+09:00  INFO 10242 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <<< dea2a752-bf5d-479d-9a78-d8b17f25579f Content-Type: application/json, 129, [{"txid":"dea2a752-bf5d-479d-9a78-d8b17f25579f","status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1698645982841}]
+2023-10-30T15:07:06.577+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> b2a4429e-bcd9-4322-aff9-f752c30e3bb8 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /2	400	1003	20ms	78	125
+2023-10-30T15:07:06.577+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> b2a4429e-bcd9-4322-aff9-f752c30e3bb8 Content-Type: application/json, Accept: */*, 78, [{
+    "password" : "asd000",
+    "name" : "asd2",
+    "phone" : "00-000-000"
+}]
+2023-10-30T15:07:06.577+09:00  INFO 10242 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< b2a4429e-bcd9-4322-aff9-f752c30e3bb8 Content-Type: application/json, 125, [{"txid":"b2a4429e-bcd9-4322-aff9-f752c30e3bb8","status":"1003","message":"삭제된 리소스입니다.","data":null,"timestamp":1698646026573}]
+2023-10-30T15:08:32.704+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <-> 3b893b75-cebf-45d4-b35b-3a7d3d0b3eaf 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /3	200	0000	325ms	78	139
+2023-10-30T15:08:32.705+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : >>> 3b893b75-cebf-45d4-b35b-3a7d3d0b3eaf Content-Type: application/json, Accept: */*, 78, [{
+    "password" : "asd333",
+    "name" : "asd3",
+    "phone" : "03-000-000"
+}]
+2023-10-30T15:08:32.705+09:00  INFO 10242 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <<< 3b893b75-cebf-45d4-b35b-3a7d3d0b3eaf Content-Type: application/json, 139, [{"txid":"3b893b75-cebf-45d4-b35b-3a7d3d0b3eaf","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698646112701}]
+2023-10-30T15:10:58.949+09:00  INFO 10242 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : <-> 4a14bfab-fa9c-4ac2-8caf-e4d5b10a1a5f 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /delete/2	200	0000	34ms	0	139
+2023-10-30T15:10:58.951+09:00  INFO 10242 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : >>> 4a14bfab-fa9c-4ac2-8caf-e4d5b10a1a5f Content-Type: null, Accept: */*, 0, []
+2023-10-30T15:10:58.952+09:00  INFO 10242 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : <<< 4a14bfab-fa9c-4ac2-8caf-e4d5b10a1a5f Content-Type: application/json, 139, [{"txid":"4a14bfab-fa9c-4ac2-8caf-e4d5b10a1a5f","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698646258945}]
+2023-10-30T15:17:13.093+09:00  INFO 10242 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T15:17:13.112+09:00  INFO 10242 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-30T15:17:13.117+09:00  INFO 10242 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-30T15:17:18.152+09:00  INFO 13198 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 13198 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-30T15:17:18.154+09:00  INFO 13198 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-30T15:17:19.795+09:00  INFO 13198 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T15:17:19.861+09:00  INFO 13198 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-10-30T15:17:19.980+09:00  WARN 13198 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-30T15:17:20.537+09:00  INFO 13198 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-30T15:17:20.547+09:00  INFO 13198 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-30T15:17:20.547+09:00  INFO 13198 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-30T15:17:20.636+09:00  INFO 13198 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-30T15:17:20.636+09:00  INFO 13198 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2431 ms
+2023-10-30T15:17:20.902+09:00  INFO 13198 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-30T15:17:21.144+09:00  INFO 13198 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ab5924c
+2023-10-30T15:17:21.147+09:00  INFO 13198 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-30T15:17:21.198+09:00  INFO 13198 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T15:17:21.256+09:00  INFO 13198 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-30T15:17:21.259+09:00  INFO 13198 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T15:17:21.580+09:00  INFO 13198 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T15:17:21.697+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c62be3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c6c84fa)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@70ce2fb2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@64688978)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4d525897) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@25f14e93)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@24435620) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c02899)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5b895e76) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74231642)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4a6facb0) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4feec184)
+2023-10-30T15:17:21.698+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5e055ce1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3278d065)
+2023-10-30T15:17:21.699+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@545f0b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3c9ef37b)
+2023-10-30T15:17:21.699+09:00 DEBUG 13198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4888425d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3c8758d1)
+2023-10-30T15:17:22.674+09:00  INFO 13198 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-30T15:17:22.678+09:00  INFO 13198 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T15:17:23.345+09:00  WARN 13198 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-30T15:17:23.825+09:00  INFO 13198 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-30T15:17:23.904+09:00  INFO 13198 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@768967cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@116fe252, org.springframework.security.web.context.SecurityContextHolderFilter@55f29d39, org.springframework.security.web.header.HeaderWriterFilter@43945480, org.springframework.security.web.authentication.logout.LogoutFilter@1046aaa4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c50d1b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@365c8a47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b8b755d, org.springframework.security.web.access.ExceptionTranslationFilter@555b3ec9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a8cc099]
+2023-10-30T15:17:24.437+09:00  INFO 13198 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-30T15:17:24.454+09:00  INFO 13198 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 6.776 seconds (process running for 7.484)
+2023-10-30T15:17:25.483+09:00  INFO 13198 --- [http-nio-8088-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-30T15:17:25.484+09:00  INFO 13198 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-30T15:17:25.485+09:00  INFO 13198 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-30T15:17:25.700+09:00  INFO 13198 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : <-> 32cfbfc0-cb84-4538-b05d-97986396a896 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /delete/2	400	1003	176ms	0	125
+2023-10-30T15:17:25.700+09:00  INFO 13198 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : >>> 32cfbfc0-cb84-4538-b05d-97986396a896 Content-Type: null, Accept: */*, 0, []
+2023-10-30T15:17:25.700+09:00  INFO 13198 --- [http-nio-8088-exec-2] k.l.e.common.aspect.HttpLoggingAspect    : <<< 32cfbfc0-cb84-4538-b05d-97986396a896 Content-Type: application/json, 125, [{"txid":"32cfbfc0-cb84-4538-b05d-97986396a896","status":"1003","message":"삭제된 리소스입니다.","data":null,"timestamp":1698646645632}]
+2023-10-30T15:19:24.235+09:00  INFO 13198 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T15:19:24.240+09:00  INFO 13198 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-30T15:19:24.249+09:00  INFO 13198 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-30T15:19:36.424+09:00  INFO 13302 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 13302 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-30T15:19:36.425+09:00  INFO 13302 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-30T15:19:37.594+09:00  INFO 13302 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T15:19:37.651+09:00  INFO 13302 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-10-30T15:19:37.751+09:00  WARN 13302 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-30T15:19:38.275+09:00  INFO 13302 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-30T15:19:38.284+09:00  INFO 13302 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-30T15:19:38.285+09:00  INFO 13302 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-30T15:19:38.414+09:00  INFO 13302 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-30T15:19:38.415+09:00  INFO 13302 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1941 ms
+2023-10-30T15:19:38.740+09:00  INFO 13302 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-30T15:19:39.040+09:00  INFO 13302 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75ed7512
+2023-10-30T15:19:39.042+09:00  INFO 13302 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-30T15:19:39.082+09:00  INFO 13302 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T15:19:39.133+09:00  INFO 13302 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-30T15:19:39.135+09:00  INFO 13302 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T15:19:39.644+09:00  INFO 13302 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@12a0d249) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c62be3c)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@c6c84fa) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@70ce2fb2)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@64688978) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4d525897)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@25f14e93) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@24435620)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4c02899) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5b895e76)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@74231642) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4a6facb0)
+2023-10-30T15:19:39.773+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4feec184) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5e055ce1)
+2023-10-30T15:19:39.774+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3278d065) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@545f0b6)
+2023-10-30T15:19:39.774+09:00 DEBUG 13302 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c9ef37b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4888425d)
+2023-10-30T15:19:40.748+09:00  INFO 13302 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-30T15:19:40.756+09:00  INFO 13302 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T15:19:41.317+09:00  WARN 13302 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-30T15:19:41.738+09:00  INFO 13302 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-30T15:19:41.782+09:00  INFO 13302 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@768967cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@116fe252, org.springframework.security.web.context.SecurityContextHolderFilter@55f29d39, org.springframework.security.web.header.HeaderWriterFilter@43945480, org.springframework.security.web.authentication.logout.LogoutFilter@1046aaa4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c50d1b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@365c8a47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b8b755d, org.springframework.security.web.access.ExceptionTranslationFilter@555b3ec9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a8cc099]
+2023-10-30T15:19:42.293+09:00  INFO 13302 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-30T15:19:42.310+09:00  INFO 13302 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 6.334 seconds (process running for 6.993)
