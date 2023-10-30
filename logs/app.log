@@ -1600,3 +1600,364 @@ Caused by: java.lang.IllegalStateException: Method must not have Pageable *and* 
 2023-10-30T17:22:20.259+09:00  INFO 17799 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <-> 9e88b341-fa8e-4c78-98b7-b1a0598a73a8 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	200	0000	9ms	0	596
 2023-10-30T17:22:20.259+09:00  INFO 17799 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : >>> 9e88b341-fa8e-4c78-98b7-b1a0598a73a8 Content-Type: null, Accept: */*, 0, []
 2023-10-30T17:22:20.259+09:00  INFO 17799 --- [http-nio-8088-exec-6] k.l.e.common.aspect.HttpLoggingAspect    : <<< 9e88b341-fa8e-4c78-98b7-b1a0598a73a8 Content-Type: application/json, 596, [{"txid":"9e88b341-fa8e-4c78-98b7-b1a0598a73a8","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-30T17:20:33","updatedAt":"2023-10-30T17:20:33","email":"user2@example.com","name":"user2","phone":"2-000-000","deleted":false,"uid":2}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalElements":1,"totalPages":1,"last":true,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":1,"first":true,"empty":false},"timestamp":1698654140257}]
+2023-10-30T17:25:31.125+09:00  INFO 17799 --- [http-nio-8088-exec-9] k.l.e.common.aspect.HttpLoggingAspect    : <-> bf3268bf-271f-49b0-ac54-e782214465da 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	200	0000	9ms	0	596
+2023-10-30T17:25:31.126+09:00  INFO 17799 --- [http-nio-8088-exec-9] k.l.e.common.aspect.HttpLoggingAspect    : >>> bf3268bf-271f-49b0-ac54-e782214465da Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:25:31.126+09:00  INFO 17799 --- [http-nio-8088-exec-9] k.l.e.common.aspect.HttpLoggingAspect    : <<< bf3268bf-271f-49b0-ac54-e782214465da Content-Type: application/json, 596, [{"txid":"bf3268bf-271f-49b0-ac54-e782214465da","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-30T17:20:33","updatedAt":"2023-10-30T17:20:33","email":"user2@example.com","name":"user2","phone":"2-000-000","deleted":false,"uid":2}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalElements":1,"totalPages":1,"last":true,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":1,"first":true,"empty":false},"timestamp":1698654331121}]
+2023-10-30T17:25:34.342+09:00  INFO 17799 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <-> 08c93862-e33c-4b35-9bd3-7ff05cd6c25a 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=2&size=10	400	1001	13ms	0	129
+2023-10-30T17:25:34.343+09:00  INFO 17799 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : >>> 08c93862-e33c-4b35-9bd3-7ff05cd6c25a Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:25:34.343+09:00  INFO 17799 --- [http-nio-8088-exec-10] k.l.e.common.aspect.HttpLoggingAspect    : <<< 08c93862-e33c-4b35-9bd3-7ff05cd6c25a Content-Type: application/json, 129, [{"txid":"08c93862-e33c-4b35-9bd3-7ff05cd6c25a","status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1698654334340}]
+2023-10-30T17:27:42.005+09:00  INFO 17799 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> 2ef54033-26c1-4c31-81a4-e597eebe4c04 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=2&size=10	200	0000	17ms	0	2053
+2023-10-30T17:27:42.014+09:00  INFO 17799 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> 2ef54033-26c1-4c31-81a4-e597eebe4c04 Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:27:42.015+09:00  INFO 17799 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< 2ef54033-26c1-4c31-81a4-e597eebe4c04 Content-Type: application/json, 2053, [{"txid":"2ef54033-26c1-4c31-81a4-e597eebe4c04","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-27T11:14:43","updatedAt":"2023-10-27T11:14:43","email":"user14@example.com","name":"user14","phone":"14-000-000","deleted":false,"uid":14},{"createdAt":"2023-10-27T11:14:50","updatedAt":"2023-10-27T11:14:50","email":"user15@example.com","name":"user15","phone":"15-000-000","deleted":false,"uid":15},{"createdAt":"2023-10-27T11:14:57","updatedAt":"2023-10-27T11:14:57","email":"user16@example.com","name":"user16","phone":"16-000-000","deleted":false,"uid":16},{"createdAt":"2023-10-27T11:15:03","updatedAt":"2023-10-27T11:15:03","email":"user17@example.com","name":"user17","phone":"17-000-000","deleted":false,"uid":17},{"createdAt":"2023-10-27T11:15:09","updatedAt":"2023-10-27T11:15:09","email":"user18@example.com","name":"user18","phone":"18-000-000","deleted":false,"uid":18},{"createdAt":"2023-10-27T11:15:15","updatedAt":"2023-10-27T11:15:15","email":"user19@example.com","name":"user19","phone":"19-000-000","deleted":false,"uid":19},{"createdAt":"2023-10-27T11:15:27","updatedAt":"2023-10-27T11:15:27","email":"user20@example.com","name":"user20","phone":"20-000-000","deleted":false,"uid":20},{"createdAt":"2023-10-27T12:19:28","updatedAt":"2023-10-27T12:19:28","email":"user21@example.com","name":"user21","phone":"21-000-000","deleted":false,"uid":21},{"createdAt":"2023-10-30T15:27:17","updatedAt":"2023-10-30T15:27:17","email":"user22@example.com","name":"user22","phone":"22-000-000","deleted":false,"uid":22},{"createdAt":"2023-10-30T16:15:31","updatedAt":"2023-10-30T16:15:31","email":"user23@example.com","name":"user23","phone":"23-000-000","deleted":false,"uid":23}],"pageable":{"pageNumber":1,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":10,"paged":true,"unpaged":false},"totalElements":20,"totalPages":2,"last":true,"size":10,"number":1,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":10,"first":false,"empty":false},"timestamp":1698654462003}]
+2023-10-30T17:28:52.279+09:00  INFO 17799 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <-> a406f63f-47dd-484e-84d4-3c6fb5901d50 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	200	0000	27ms	0	2033
+2023-10-30T17:28:52.281+09:00  INFO 17799 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : >>> a406f63f-47dd-484e-84d4-3c6fb5901d50 Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:28:52.281+09:00  INFO 17799 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <<< a406f63f-47dd-484e-84d4-3c6fb5901d50 Content-Type: application/json, 2033, [{"txid":"a406f63f-47dd-484e-84d4-3c6fb5901d50","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-27T11:13:19","updatedAt":"2023-10-30T15:32:26","email":"user3@example.com","name":"asd3","phone":"03-000-000","deleted":false,"uid":3},{"createdAt":"2023-10-27T11:13:31","updatedAt":"2023-10-27T11:13:31","email":"user5@example.com","name":"user5","phone":"05-000-000","deleted":false,"uid":5},{"createdAt":"2023-10-27T11:13:38","updatedAt":"2023-10-27T11:13:38","email":"user6@example.com","name":"user6","phone":"06-000-000","deleted":false,"uid":6},{"createdAt":"2023-10-27T11:13:44","updatedAt":"2023-10-27T11:13:44","email":"user7@example.com","name":"user7","phone":"07-000-000","deleted":false,"uid":7},{"createdAt":"2023-10-27T11:13:57","updatedAt":"2023-10-27T11:13:57","email":"user8@example.com","name":"user8","phone":"08-000-000","deleted":false,"uid":8},{"createdAt":"2023-10-27T11:14:05","updatedAt":"2023-10-27T11:14:05","email":"user9@example.com","name":"user9","phone":"09-000-000","deleted":false,"uid":9},{"createdAt":"2023-10-27T11:14:15","updatedAt":"2023-10-27T11:14:15","email":"user10@example.com","name":"user10","phone":"10-000-000","deleted":false,"uid":10},{"createdAt":"2023-10-27T11:14:23","updatedAt":"2023-10-27T11:14:23","email":"user11@example.com","name":"user11","phone":"11-000-000","deleted":false,"uid":11},{"createdAt":"2023-10-27T11:14:30","updatedAt":"2023-10-27T11:14:30","email":"user12@example.com","name":"user12","phone":"12-000-000","deleted":false,"uid":12},{"createdAt":"2023-10-27T11:14:37","updatedAt":"2023-10-27T11:14:37","email":"user13@example.com","name":"user13","phone":"13-000-000","deleted":false,"uid":13}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalElements":20,"totalPages":2,"last":false,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698654532274}]
+2023-10-30T17:45:23.075+09:00  INFO 17799 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:45:23.107+09:00  INFO 17799 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-30T17:45:23.142+09:00  INFO 17799 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-30T17:45:28.845+09:00  INFO 18864 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 18864 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-30T17:45:28.847+09:00  INFO 18864 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-30T17:45:29.943+09:00  INFO 18864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T17:45:30.001+09:00  INFO 18864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2023-10-30T17:45:30.121+09:00  WARN 18864 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-30T17:45:30.634+09:00  INFO 18864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-30T17:45:30.643+09:00  INFO 18864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-30T17:45:30.644+09:00  INFO 18864 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-30T17:45:30.722+09:00  INFO 18864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-30T17:45:30.723+09:00  INFO 18864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1829 ms
+2023-10-30T17:45:30.934+09:00  INFO 18864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-30T17:45:31.132+09:00  INFO 18864 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@138a85d3
+2023-10-30T17:45:31.134+09:00  INFO 18864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-30T17:45:31.177+09:00  INFO 18864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T17:45:31.234+09:00  INFO 18864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-30T17:45:31.236+09:00  INFO 18864 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T17:45:31.529+09:00  INFO 18864 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T17:45:31.631+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5e055ce1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3278d065)
+2023-10-30T17:45:31.641+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@545f0b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c9ef37b)
+2023-10-30T17:45:31.642+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4888425d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c8758d1)
+2023-10-30T17:45:31.642+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@166ddfb7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5da3f32a)
+2023-10-30T17:45:31.642+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@57b3d869) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@51f4439e)
+2023-10-30T17:45:31.642+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@291cbe70) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6be422da)
+2023-10-30T17:45:31.643+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@225ddf5f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@51468039)
+2023-10-30T17:45:31.643+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d654b5f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@575d48db)
+2023-10-30T17:45:31.643+09:00 DEBUG 18864 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b36d248) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e94de5f)
+2023-10-30T17:45:32.480+09:00  INFO 18864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-30T17:45:32.484+09:00  INFO 18864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:45:32.937+09:00  WARN 18864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-30T17:45:33.334+09:00  INFO 18864 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-30T17:45:33.377+09:00  INFO 18864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2052c49f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2be83e7e, org.springframework.security.web.context.SecurityContextHolderFilter@454f6cc5, org.springframework.security.web.header.HeaderWriterFilter@5c940e28, org.springframework.security.web.authentication.logout.LogoutFilter@194a653d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@739500b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e8ce5b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@df0b348, org.springframework.security.web.access.ExceptionTranslationFilter@365c8a47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@116fe252]
+2023-10-30T17:45:33.846+09:00  INFO 18864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-30T17:45:33.865+09:00  INFO 18864 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 5.456 seconds (process running for 6.364)
+2023-10-30T17:45:36.664+09:00  INFO 18864 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-30T17:45:36.664+09:00  INFO 18864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-30T17:45:36.666+09:00  INFO 18864 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-30T17:45:37.000+09:00  INFO 18864 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> c4760ffc-d79a-4fe1-b687-a9655865291e 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	200	0000	278ms	0	2023
+2023-10-30T17:45:37.001+09:00  INFO 18864 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> c4760ffc-d79a-4fe1-b687-a9655865291e Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:45:37.001+09:00  INFO 18864 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< c4760ffc-d79a-4fe1-b687-a9655865291e Content-Type: application/json, 2023, [{"txid":"c4760ffc-d79a-4fe1-b687-a9655865291e","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-27T11:13:19","updatedAt":"2023-10-30T15:32:26","id":3,"email":"user3@example.com","name":"asd3","phone":"03-000-000","deleted":false},{"createdAt":"2023-10-27T11:13:31","updatedAt":"2023-10-27T11:13:31","id":5,"email":"user5@example.com","name":"user5","phone":"05-000-000","deleted":false},{"createdAt":"2023-10-27T11:13:38","updatedAt":"2023-10-27T11:13:38","id":6,"email":"user6@example.com","name":"user6","phone":"06-000-000","deleted":false},{"createdAt":"2023-10-27T11:13:44","updatedAt":"2023-10-27T11:13:44","id":7,"email":"user7@example.com","name":"user7","phone":"07-000-000","deleted":false},{"createdAt":"2023-10-27T11:13:57","updatedAt":"2023-10-27T11:13:57","id":8,"email":"user8@example.com","name":"user8","phone":"08-000-000","deleted":false},{"createdAt":"2023-10-27T11:14:05","updatedAt":"2023-10-27T11:14:05","id":9,"email":"user9@example.com","name":"user9","phone":"09-000-000","deleted":false},{"createdAt":"2023-10-27T11:14:15","updatedAt":"2023-10-27T11:14:15","id":10,"email":"user10@example.com","name":"user10","phone":"10-000-000","deleted":false},{"createdAt":"2023-10-27T11:14:23","updatedAt":"2023-10-27T11:14:23","id":11,"email":"user11@example.com","name":"user11","phone":"11-000-000","deleted":false},{"createdAt":"2023-10-27T11:14:30","updatedAt":"2023-10-27T11:14:30","id":12,"email":"user12@example.com","name":"user12","phone":"12-000-000","deleted":false},{"createdAt":"2023-10-27T11:14:37","updatedAt":"2023-10-27T11:14:37","id":13,"email":"user13@example.com","name":"user13","phone":"13-000-000","deleted":false}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalElements":20,"totalPages":2,"last":false,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":10,"first":true,"empty":false},"timestamp":1698655536911}]
+2023-10-30T17:50:07.713+09:00  WARN 18864 --- [http-nio-8088-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2023-10-30T17:50:07.714+09:00 ERROR 18864 --- [http-nio-8088-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'u_id' doesn't have a default value
+2023-10-30T17:50:07.734+09:00 ERROR 18864 --- [http-nio-8088-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: could not execute statement [Field 'u_id' doesn't have a default value] [insert into user (created_at,deleted,email,name,password,phone,updated_at) values (?,?,?,?,?,?,?)]] with root cause
+
+java.sql.SQLException: Field 'u_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:171) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2780) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:676) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:363) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:277) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:180) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:140) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:755) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:739) ~[hibernate-core-6.2.13.Final.jar:6.2.13.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360) ~[spring-orm-6.0.13.jar:6.0.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy153.persist(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-6.0.13.jar:6.0.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy153.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:72) ~[spring-data-commons-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.1.5.jar:3.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244) ~[spring-aop-6.0.13.jar:6.0.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy157.save(Unknown Source) ~[na:na]
+	at kr.lfin.exam.services.UserService.insert(UserService.java:42) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.13.jar:6.0.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:699) ~[spring-aop-6.0.13.jar:6.0.13]
+	at kr.lfin.exam.services.UserService$$SpringCGLIB$$0.insert(<generated>) ~[main/:na]
+	at kr.lfin.exam.controllers.UserController.insert(UserController.java:20) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.13.jar:6.0.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.15.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at kr.lfin.exam.common.aspect.HttpLoggingAspect.doFilter(HttpLoggingAspect.java:60) ~[main/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.5.jar:6.1.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.13.jar:6.0.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.15.jar:10.1.15]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2023-10-30T17:51:31.930+09:00  INFO 18864 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:51:31.936+09:00  INFO 18864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-30T17:51:31.955+09:00  INFO 18864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-30T17:51:37.046+09:00  INFO 19136 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 19136 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-30T17:51:37.050+09:00  INFO 19136 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-30T17:51:38.237+09:00  INFO 19136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T17:51:38.289+09:00  INFO 19136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2023-10-30T17:51:38.379+09:00  WARN 19136 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-30T17:51:38.876+09:00  INFO 19136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-30T17:51:38.885+09:00  INFO 19136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-30T17:51:38.885+09:00  INFO 19136 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-30T17:51:38.963+09:00  INFO 19136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-30T17:51:38.963+09:00  INFO 19136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1862 ms
+2023-10-30T17:51:39.246+09:00  INFO 19136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-30T17:51:39.465+09:00  INFO 19136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@138a85d3
+2023-10-30T17:51:39.467+09:00  INFO 19136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-30T17:51:39.505+09:00  INFO 19136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T17:51:39.558+09:00  INFO 19136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-30T17:51:39.560+09:00  INFO 19136 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T17:51:39.901+09:00  INFO 19136 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T17:51:40.008+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5e055ce1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3278d065)
+2023-10-30T17:51:40.008+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@545f0b6) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c9ef37b)
+2023-10-30T17:51:40.008+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@4888425d) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c8758d1)
+2023-10-30T17:51:40.008+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@166ddfb7) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5da3f32a)
+2023-10-30T17:51:40.009+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@57b3d869) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@51f4439e)
+2023-10-30T17:51:40.009+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@291cbe70) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6be422da)
+2023-10-30T17:51:40.009+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@225ddf5f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@51468039)
+2023-10-30T17:51:40.009+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d654b5f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@575d48db)
+2023-10-30T17:51:40.009+09:00 DEBUG 19136 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1b36d248) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7e94de5f)
+2023-10-30T17:51:40.978+09:00  INFO 19136 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-30T17:51:40.982+09:00  INFO 19136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:51:41.543+09:00  WARN 19136 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-30T17:51:41.974+09:00  INFO 19136 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-30T17:51:42.021+09:00  INFO 19136 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2bdf6c7c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13ac1657, org.springframework.security.web.context.SecurityContextHolderFilter@5d180628, org.springframework.security.web.header.HeaderWriterFilter@655875bb, org.springframework.security.web.authentication.logout.LogoutFilter@4cb0e39e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1046aaa4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fad50f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52d68eb9, org.springframework.security.web.access.ExceptionTranslationFilter@cec1ce2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a642c54]
+2023-10-30T17:51:42.587+09:00  INFO 19136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-30T17:51:42.609+09:00  INFO 19136 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 6.126 seconds (process running for 6.951)
+2023-10-30T17:51:48.776+09:00  INFO 19136 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-30T17:51:48.776+09:00  INFO 19136 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-30T17:51:48.779+09:00  INFO 19136 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-30T17:51:49.204+09:00  WARN 19136 --- [http-nio-8088-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1048, SQLState: 23000
+2023-10-30T17:51:49.204+09:00 ERROR 19136 --- [http-nio-8088-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Column 'u_id' cannot be null
+2023-10-30T17:51:49.247+09:00  INFO 19136 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> 0ec143c5-8f02-4594-a0bf-0d5040e3344d 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1002	430ms	106	128
+2023-10-30T17:51:49.248+09:00  INFO 19136 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> 0ec143c5-8f02-4594-a0bf-0d5040e3344d Content-Type: application/json, Accept: */*, 106, [{
+    "email": "user2@example.com",
+    "password": "pw2",
+    "name": "user2",
+    "phone": "2-000-000"
+}]
+2023-10-30T17:51:49.248+09:00  INFO 19136 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< 0ec143c5-8f02-4594-a0bf-0d5040e3344d Content-Type: application/json, 128, [{"txid":"0ec143c5-8f02-4594-a0bf-0d5040e3344d","status":"1002","message":"형식이 올바르지 않습니다.","data":null,"timestamp":1698655909215}]
+2023-10-30T17:52:50.944+09:00  INFO 19136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:52:50.947+09:00  INFO 19136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-30T17:52:50.954+09:00  INFO 19136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-30T17:52:55.392+09:00  INFO 19198 --- [main] kr.lfin.exam.LfinDevExamApplication      : Starting LfinDevExamApplication using Java 19.0.2 with PID 19198 (/Users/nakyung/Desktop/lfin-dev-exam/build/classes/java/main started by nakyung in /Users/nakyung/Desktop/lfin-dev-exam)
+2023-10-30T17:52:55.394+09:00  INFO 19198 --- [main] kr.lfin.exam.LfinDevExamApplication      : The following 1 profile is active: "local"
+2023-10-30T17:52:56.837+09:00  INFO 19198 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-30T17:52:56.886+09:00  INFO 19198 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-10-30T17:52:56.993+09:00  WARN 19198 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.lfin.exam]' package. Please check your configuration.
+2023-10-30T17:52:57.504+09:00  INFO 19198 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2023-10-30T17:52:57.515+09:00  INFO 19198 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-30T17:52:57.516+09:00  INFO 19198 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-30T17:52:57.604+09:00  INFO 19198 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-30T17:52:57.605+09:00  INFO 19198 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2156 ms
+2023-10-30T17:52:57.863+09:00  INFO 19198 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-30T17:52:58.069+09:00  INFO 19198 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c8ab9de
+2023-10-30T17:52:58.071+09:00  INFO 19198 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-30T17:52:58.111+09:00  INFO 19198 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-30T17:52:58.161+09:00  INFO 19198 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-10-30T17:52:58.163+09:00  INFO 19198 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-30T17:52:58.438+09:00  INFO 19198 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@50e1f3fc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@54737322)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@56da8847) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7323c38c)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2c02a007) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@63a72cc6)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@61bd0845) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@cef885d)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35d4035f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6f4fc83f)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@66b90ab3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@16e4db59)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@33fec21) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@12a0d249)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c62be3c) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@c6c84fa)
+2023-10-30T17:52:58.525+09:00 DEBUG 19198 --- [main] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@70ce2fb2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64688978)
+2023-10-30T17:52:59.389+09:00  INFO 19198 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-10-30T17:52:59.394+09:00  INFO 19198 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-30T17:52:59.947+09:00  WARN 19198 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-30T17:53:00.414+09:00  INFO 19198 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-10-30T17:53:00.457+09:00  INFO 19198 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@359f3401, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@242a3997, org.springframework.security.web.context.SecurityContextHolderFilter@d3929ba, org.springframework.security.web.header.HeaderWriterFilter@301b89e1, org.springframework.security.web.authentication.logout.LogoutFilter@2db0dd19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b22bebc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60773809, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51d50b5f, org.springframework.security.web.access.ExceptionTranslationFilter@739500b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2052c49f]
+2023-10-30T17:53:00.931+09:00  INFO 19198 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+2023-10-30T17:53:00.946+09:00  INFO 19198 --- [main] kr.lfin.exam.LfinDevExamApplication      : Started LfinDevExamApplication in 6.073 seconds (process running for 6.92)
+2023-10-30T17:53:01.966+09:00  INFO 19198 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-30T17:53:01.966+09:00  INFO 19198 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-30T17:53:01.968+09:00  INFO 19198 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-30T17:53:02.450+09:00  INFO 19198 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <-> 1ed93e9e-beaf-46fe-82a8-df1bb40365e5 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	200	0000	445ms	106	139
+2023-10-30T17:53:02.450+09:00  INFO 19198 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : >>> 1ed93e9e-beaf-46fe-82a8-df1bb40365e5 Content-Type: application/json, Accept: */*, 106, [{
+    "email": "user2@example.com",
+    "password": "pw2",
+    "name": "user2",
+    "phone": "2-000-000"
+}]
+2023-10-30T17:53:02.450+09:00  INFO 19198 --- [http-nio-8088-exec-1] k.l.e.common.aspect.HttpLoggingAspect    : <<< 1ed93e9e-beaf-46fe-82a8-df1bb40365e5 Content-Type: application/json, 139, [{"txid":"1ed93e9e-beaf-46fe-82a8-df1bb40365e5","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698655982414}]
+2023-10-30T17:53:05.547+09:00  INFO 19198 --- [http-nio-8088-exec-3] k.l.e.common.aspect.HttpLoggingAspect    : <-> 352643ce-3dbb-40f9-97d5-331f9039a936 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	200	0000	51ms	0	640
+2023-10-30T17:53:05.548+09:00  INFO 19198 --- [http-nio-8088-exec-3] k.l.e.common.aspect.HttpLoggingAspect    : >>> 352643ce-3dbb-40f9-97d5-331f9039a936 Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:53:05.548+09:00  INFO 19198 --- [http-nio-8088-exec-3] k.l.e.common.aspect.HttpLoggingAspect    : <<< 352643ce-3dbb-40f9-97d5-331f9039a936 Content-Type: application/json, 640, [{"txid":"352643ce-3dbb-40f9-97d5-331f9039a936","status":"0000","message":"정상적으로 처리되었습니다.","data":{"content":[{"createdAt":"2023-10-30T17:53:02","updatedAt":"2023-10-30T17:53:02","id":1,"email":"user2@example.com","name":"user2","phone":"2-000-000","deleted":false,"uid":"3740c90c-3e09-4f7d-97f9-dd652702fce0"}],"pageable":{"pageNumber":0,"pageSize":10,"sort":{"empty":true,"unsorted":true,"sorted":false},"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":1,"last":true,"size":10,"number":0,"sort":{"empty":true,"unsorted":true,"sorted":false},"numberOfElements":1,"first":true,"empty":false},"timestamp":1698655985531}]
+2023-10-30T17:53:13.108+09:00  INFO 19198 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <-> 78055ef6-866f-4852-972d-25ddc8132a46 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	PUT /delete/1	200	0000	45ms	0	139
+2023-10-30T17:53:13.108+09:00  INFO 19198 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : >>> 78055ef6-866f-4852-972d-25ddc8132a46 Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:53:13.108+09:00  INFO 19198 --- [http-nio-8088-exec-4] k.l.e.common.aspect.HttpLoggingAspect    : <<< 78055ef6-866f-4852-972d-25ddc8132a46 Content-Type: application/json, 139, [{"txid":"78055ef6-866f-4852-972d-25ddc8132a46","status":"0000","message":"정상적으로 처리되었습니다.","data":{"result":true},"timestamp":1698655993106}]
+2023-10-30T17:53:17.665+09:00  INFO 19198 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <-> fa49b810-9c8c-49ed-9049-30946158cdb2 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	GET /list?page=1&size=10	400	1001	12ms	0	129
+2023-10-30T17:53:17.666+09:00  INFO 19198 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : >>> fa49b810-9c8c-49ed-9049-30946158cdb2 Content-Type: null, Accept: */*, 0, []
+2023-10-30T17:53:17.666+09:00  INFO 19198 --- [http-nio-8088-exec-5] k.l.e.common.aspect.HttpLoggingAspect    : <<< fa49b810-9c8c-49ed-9049-30946158cdb2 Content-Type: application/json, 129, [{"txid":"fa49b810-9c8c-49ed-9049-30946158cdb2","status":"1001","message":"리소스를 찾을 수 없습니다.","data":null,"timestamp":1698655997663}]
+2023-10-30T17:53:20.940+09:00  INFO 19198 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : <-> d7174467-ae22-4c35-9d00-159edfaa59ae 	0:0:0:0:0:0:0:1	PostmanRuntime/7.34.0	POST /signup	400	1005	118ms	106	129
+2023-10-30T17:53:20.941+09:00  INFO 19198 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : >>> d7174467-ae22-4c35-9d00-159edfaa59ae Content-Type: application/json, Accept: */*, 106, [{
+    "email": "user2@example.com",
+    "password": "pw2",
+    "name": "user2",
+    "phone": "2-000-000"
+}]
+2023-10-30T17:53:20.941+09:00  INFO 19198 --- [http-nio-8088-exec-7] k.l.e.common.aspect.HttpLoggingAspect    : <<< d7174467-ae22-4c35-9d00-159edfaa59ae Content-Type: application/json, 129, [{"txid":"d7174467-ae22-4c35-9d00-159edfaa59ae","status":"1005","message":"이미 존재하는 이메일입니다.","data":null,"timestamp":1698656000938}]

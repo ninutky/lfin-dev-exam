@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 
+import java.util.UUID;
+
 @Entity
 //@Table(name = "user")
 @Getter
@@ -15,7 +17,8 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long uId;
+    private Long id;
+    private UUID uId;
     @Column(unique = true)
     private String email;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
@@ -26,6 +29,7 @@ public class User extends BaseTimeEntity {
 
     public static User createUser(String email, String password, String name, String phone) {
         return User.builder()
+                .uId(UUID.randomUUID())
                 .email(email)
                 .password(bcryptHashPassword(password))
                 .name(name)
