@@ -29,7 +29,7 @@ public class UserService {
     }
 
     public void insert(UserVO userVO) {
-        User user = User.createUser(userVO.getEmail(), userVO.getPassword(), userVO.getName(), userVO.getPhone(), userVO.getDeleted());
+        User user = User.createUser(userVO.getEmail(), userVO.getPassword(), userVO.getName(), userVO.getPhone());
         if (userRepository.existsByEmail(userVO.getEmail())) {
             throw new DuplicateEmailException();
         }

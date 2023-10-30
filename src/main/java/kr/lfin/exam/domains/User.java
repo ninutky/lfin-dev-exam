@@ -24,13 +24,13 @@ public class User extends BaseTimeEntity {
     private String phone;
     private Boolean deleted;
 
-    public static User createUser(String email, String password, String name, String phone, Boolean deleted) {
+    public static User createUser(String email, String password, String name, String phone) {
         return User.builder()
                 .email(email)
                 .password(bcryptHashPassword(password))
                 .name(name)
                 .phone(phone)
-                .deleted(deleted)
+                .deleted(false)
                 .build();
     }
 
