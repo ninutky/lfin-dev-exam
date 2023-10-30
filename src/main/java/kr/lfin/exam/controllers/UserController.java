@@ -24,7 +24,7 @@ public class UserController {
     @GetMapping("/list")
     public ResponseEntity<ApiResult> findAll(final Pageable pageable) {
         return ResponseEntity.ok().body(
-                new ApiResult(userService.findAll(pageable)));
+                new ApiResult(userService.findByDeletedFalse(pageable)));
     }
 
     @PutMapping( "/{id}")

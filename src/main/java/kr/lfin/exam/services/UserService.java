@@ -24,6 +24,10 @@ public class UserService {
         return userRepository.findAll(pageable);
     }
 
+    public Page<User> findByDeletedFalse(Pageable pageable) {
+        return userRepository.findByDeletedFalse(pageable);
+    }
+
     public void insert(UserVO userVO) {
         User user = User.createUser(userVO.getEmail(), userVO.getPassword(), userVO.getName(), userVO.getPhone(), userVO.getDeleted());
         if (userRepository.existsByEmail(userVO.getEmail())) {
